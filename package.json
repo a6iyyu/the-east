@@ -1,0 +1,20 @@
+{
+  "name": "wdc",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.9",
+    "@astrojs/partytown": "^2.0.4",
+    "@astrojs/vue": "^4.0.9",
+    "astro": "^4.5.5",
+    "typescript": "^5.4.2",
+    "vue": "^3.4.21"
+  }
+}
