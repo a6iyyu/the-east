@@ -28,7 +28,9 @@
   header > section:nth-child(2) > a:hover {
     color: #dedede;
     text-decoration: underline;
-    margin-right: 1rem;
+  }
+  header > section:nth-child(2) > a:hover:not(:last-child) {
+    margin-right: 5rem;
   }
   body {
     opacity: 1;
