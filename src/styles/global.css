@@ -24,7 +24,7 @@
     transition: all 300ms ease-in-out;
   }
   body {
-    background-image: linear-gradient(to left, #242424, #404040);
+    background-image: linear-gradient(to top left, #242424, #404040);
   }
   header > section:nth-child(2) > a:hover {
     color: #dedede;
@@ -45,9 +45,11 @@
 }
 
 @media screen and (max-width: 3120px) {
-  .hero img {
-    border-radius: 50% 50% 0% 50% / 50% 50% 50% 00%;
+  .hero img:not(img:first-child) {
     inset: 12rem 0 0 130rem;
+  }
+  .hero img:not(img:last-child) {
+    display: none;
   }
   .hero span {
     margin-top: 2rem;
@@ -55,61 +57,61 @@
 }
 
 @media screen and (max-width: 2080px) {
-  .hero img {
+  .hero img:not(img:first-child) {
     inset: 12rem 0 0 92.5rem;
   }
 }
 
 @media screen and (max-width: 1920px) {
-  .hero img {
+  .hero img:not(img:first-child) {
     inset: 12rem 0 0 80rem;
   }
 }
 
 @media screen and (max-width: 1800px) {
-  .hero img {
+  .hero img:not(img:first-child) {
     inset: 12rem 0 0 75rem;
   }
 }
 
 @media screen and (max-width: 1680px) {
-  .hero img {
+  .hero img:not(img:first-child) {
     inset: 12rem 0 0 65rem;
   }
 }
 
 @media screen and (max-width: 1440px) {
-  .hero img {
+  .hero img:not(img:first-child) {
     inset: 12rem 0 0 56.25rem;
   }
 }
 
 @media screen and (max-width: 1280px) {
-  .hero img {
+  .hero img:not(img:first-child) {
     inset: 12rem 0 0 50rem;
   }
 }
 
 @media screen and (max-width: 1160px) {
+  .hero {
+    margin-top: 5rem !important;
+  }
   .hero h1 {
     font-size: 3.5rem !important;
     text-align: center;
     width: 100%;
   }
-  .hero span:not(span:last-child) {
+  .hero span:not(span:last-child),
+  .hero img:not(img:first-child) {
     display: none;
   }
-  .hero img {
-    border-radius: 100%;
-    inset: 9rem 0 0 7rem;
-    width: 275px;
+  .hero img:not(img:last-child) {
+    display: flex;
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .hero img {
-    width: 225px;
-  }
 }
 
 @media screen and (max-width: 864px) {
@@ -130,6 +132,9 @@
   }
   header > section:last-child i:hover {
     background-color: #d3d3d3 !important;
+  }
+  .hero img:not(img:last-child) {
+    width: 75%;
   }
 }
 
