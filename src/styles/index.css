@@ -12,16 +12,6 @@
   .hero span {
     margin-top: 2rem;
   }
-  #scroll-to-top {
-    height: 7rem;
-    width: 7rem;
-    cursor: pointer;
-    bottom: 4rem;
-    right: 4rem;
-  }
-  #scroll-to-top:hover {
-    background-color: #d9d9d9 !important;
-  }
 }
 
 @media screen and (max-width: 2080px) {
