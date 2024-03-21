@@ -1,0 +1,130 @@
+@media screen and (max-width: 3120px) {
+  .hero h1,
+  .hero span {
+    font-family: "Lustria", "DM Sans", "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .hero img:not(img:first-child) {
+    inset: 12rem 0 0 130rem;
+  }
+  .hero img:not(img:last-child) {
+    display: none;
+  }
+  .hero span {
+    margin-top: 2rem;
+  }
+  #scroll-to-top {
+    height: 7rem;
+    width: 7rem;
+    cursor: pointer;
+    bottom: 4rem;
+    right: 4rem;
+  }
+  #scroll-to-top:hover {
+    background-color: #d9d9d9 !important;
+  }
+}
+
+@media screen and (max-width: 2080px) {
+  .hero img:not(img:first-child) {
+    inset: 12rem 0 0 92.5rem;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .hero img:not(img:first-child) {
+    inset: 12rem 0 0 80rem;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .hero img:not(img:first-child) {
+    inset: 12rem 0 0 75rem;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .hero img:not(img:first-child) {
+    inset: 12rem 0 0 65rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .hero img:not(img:first-child) {
+    inset: 12rem 0 0 56.25rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hero img:not(img:first-child) {
+    inset: 12rem 0 0 50rem;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .hero {
+    margin-top: 5rem !important;
+  }
+  .hero h1 {
+    font-size: 3.5rem !important;
+    text-align: center;
+    width: 100%;
+  }
+  .hero span:not(span:last-child),
+  .hero img:not(img:first-child) {
+    display: none;
+  }
+  .hero img:not(img:last-child) {
+    display: flex;
+    width: 50%;
+  }
+  .biography {
+    flex-direction: column;
+  }
+  .biography > div:first-child {
+    display: grid;
+    place-items: center;
+    width: 100% !important;
+  }
+  .biography img {
+    border-radius: 999px !important;
+  }
+  .biography > div:last-child {
+    margin: 3rem 0 0 0 !important;
+    width: 100% !important;
+    display: grid;
+    place-items: center;
+  }
+  .biography > div:last-child h3 {
+    text-align: center;
+  }
+  .biography > div:last-child span {
+    gap: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .hero img:not(img:last-child) {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero h1 {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hero {
+    margin-top: 5rem !important;
+  }
+  .hero h1 {
+    font-size: 1.75rem !important;
+  }
+}

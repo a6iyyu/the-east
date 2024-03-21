@@ -37,78 +37,33 @@
     padding: 0;
     display: block;
   }
-  .logo,
-  .hero h1,
-  .hero span {
+  .logo {
     font-family: "Lustria", "DM Sans", "Open Sans", "Helvetica Neue", sans-serif;
   }
 }
 
 @media screen and (max-width: 3120px) {
-  .hero img:not(img:first-child) {
-    inset: 12rem 0 0 130rem;
-  }
-  .hero img:not(img:last-child) {
-    display: none;
-  }
-  .hero span {
-    margin-top: 2rem;
-  }
 }
 
 @media screen and (max-width: 2080px) {
-  .hero img:not(img:first-child) {
-    inset: 12rem 0 0 92.5rem;
-  }
 }
 
 @media screen and (max-width: 1920px) {
-  .hero img:not(img:first-child) {
-    inset: 12rem 0 0 80rem;
-  }
 }
 
 @media screen and (max-width: 1800px) {
-  .hero img:not(img:first-child) {
-    inset: 12rem 0 0 75rem;
-  }
 }
 
 @media screen and (max-width: 1680px) {
-  .hero img:not(img:first-child) {
-    inset: 12rem 0 0 65rem;
-  }
 }
 
 @media screen and (max-width: 1440px) {
-  .hero img:not(img:first-child) {
-    inset: 12rem 0 0 56.25rem;
-  }
 }
 
 @media screen and (max-width: 1280px) {
-  .hero img:not(img:first-child) {
-    inset: 12rem 0 0 50rem;
-  }
 }
 
 @media screen and (max-width: 1160px) {
-  .hero {
-    margin-top: 5rem !important;
-  }
-  .hero h1 {
-    font-size: 3.5rem !important;
-    text-align: center;
-    width: 100%;
-  }
-  .hero span:not(span:last-child),
-  .hero img:not(img:first-child) {
-    display: none;
-  }
-  .hero img:not(img:last-child) {
-    display: flex;
-    width: 50%;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -133,33 +88,18 @@
   header > section:last-child i:hover {
     background-color: #d3d3d3 !important;
   }
-  .hero img:not(img:last-child) {
-    width: 75%;
-  }
 }
 
 @media screen and (max-width: 768px) {
 }
 
 @media screen and (max-width: 640px) {
-  .hero h1 {
-    font-size: 2.5rem !important;
-  }
 }
 
 @media screen and (max-width: 480px) {
-  .hero h1 {
-    font-size: 2rem !important;
-  }
 }
 
 @media screen and (max-width: 360px) {
-  .hero {
-    margin-top: 5rem !important;
-  }
-  .hero h1 {
-    font-size: 1.75rem !important;
-  }
 }
 
 @media screen and (max-width: 324px) {

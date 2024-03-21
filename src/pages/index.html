@@ -21,6 +21,23 @@
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/global.css" />
   </head>
+  <div
+    id="scroll-indicator"
+    class="position-fixed bg-light"
+    style="height: 0.25rem; z-index: 999"
+  ></div>
+  <div
+    id="scroll-to-top"
+    class="bg-light d-flex align-items-center justify-content-center invisible opacity-0 position-fixed rounded-circle"
+    style="transition: all 300ms ease-in-out"
+  >
+    <img
+      src="/public/scroll-to-top.png"
+      width="85"
+      alt="Scroll To Top"
+      class="fw-bold text-dark"
+    />
+  </div>
   <header
     class="mx-auto w-75 d-flex align-items-center justify-content-between"
     style="height: 8rem"
@@ -76,10 +93,10 @@
       style="border-radius: 9999px; height: 0.25rem; margin-top: 8rem"
     />
     <section
-      class="mx-auto d-flex h-auto w-100 align-items-start justify-content-start"
+      class="biography mx-auto d-flex h-auto w-100 align-items-start justify-content-start"
       style="margin: 6rem 0 4rem 0"
     >
-      <div class="h-auto w-25">
+      <div class="h-auto w-auto">
         <img
           src="/public/frans-kaisiepo-2.jpg"
           alt=""
@@ -88,7 +105,7 @@
         />
       </div>
       <div
-        class="h-auto w-75 d-grid place-items-center"
+        class="my-auto h-100 w-75 d-grid place-items-center"
         style="margin-left: 10rem"
       >
         <h3 class="fw-bold pe-none text-light" style="letter-spacing: 0.175rem">
@@ -96,8 +113,8 @@
         </h3>
         <br />
         <span
-          class="d-grid h-auto place-items-center"
-          style="width: 90%; grid-template-columns: 1fr 1fr; gap: 5rem"
+          class="d-grid h-auto place-items-center pe-none"
+          style="width: 90%; grid-template-columns: 1fr 1fr; gap: 4rem"
         >
           <p class="text-light" style="text-align: justify">
             Frans Kaisiepo lahir pada tanggal 10 Oktober 1921 di Pulau Biak,
@@ -115,7 +132,7 @@
     </section>
   </body>
   <footer></footer>
-  <script type="text/javascript" src="../scripts/index.js"></script>
+  <script type="text/javascript" src="../scripts/global.js"></script>
   <script
     type="text/javascript"
     src="https://unpkg.com/aos@next/dist/aos.js"
