@@ -3,6 +3,10 @@
   .hero span {
     font-family: "Lustria", "DM Sans", "Open Sans", "Helvetica Neue", sans-serif;
   }
+  .hero img {
+    border-radius: 50% 50% 0% 50% / 50% 50% 50% 0%;
+    margin-bottom: 3rem;
+  }
   .hero img:not(img:first-child) {
     inset: 12rem 0 0 130rem;
   }
@@ -110,6 +114,7 @@
   }
   .biography {
     flex-direction: column !important;
+    margin: 4rem 0 !important;
   }
   .biography > div:first-child {
     display: grid;
@@ -137,11 +142,41 @@
   .hero img:not(img:last-child) {
     width: 75%;
   }
+  .biography img {
+    width: 250px;
+  }
+  .education {
+    height: 22.5rem;
+    flex-direction: row;
+  }
+  .education > div {
+    flex-direction: column;
+  }
+  .education span,
+  .education p {
+    width: 100%;
+    margin: 0;
+  }
+  .education > div:first-child {
+    height: 100%;
+    width: 20%;
+  }
+  .education > div:not(div:first-child) {
+    height: 100%;
+    width: 40%;
+  }
+  .education span,
+  .education p {
+    height: 20%;
+  }
 }
 
 @media screen and (max-width: 640px) {
   .hero h1 {
     font-size: 2.5rem !important;
+  }
+  .education {
+    height: 25rem;
   }
 }
 
@@ -157,5 +192,8 @@
   }
   .hero h1 {
     font-size: 1.75rem !important;
+  }
+  .education {
+    height: 30rem;
   }
 }
