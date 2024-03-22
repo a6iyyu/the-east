@@ -13,7 +13,8 @@
     margin-top: 2rem;
   }
   .gradial-blur,
-  .gradial-blur-2 {
+  .gradial-blur-2,
+  .gradial-blur-3 {
     height: 10rem;
     width: 10rem;
     filter: blur(9rem);
@@ -25,6 +26,9 @@
   .gradial-blur-2 {
     background-color: #ff85ad;
     right: 0;
+  }
+  .gradial-blur-3 {
+    background-color: #ffb87a;
   }
   .education {
     display: flex;
@@ -42,10 +46,11 @@
     justify-content: space-around;
   }
   .education span,
-  .education h4 {
+  .education p {
     display: grid;
-    width: 20%;
+    width: 17.5%;
     place-items: center;
+    text-align: center;
     color: #e4e4e4;
   }
 }
@@ -104,7 +109,7 @@
     width: 50%;
   }
   .biography {
-    flex-direction: column;
+    flex-direction: column !important;
   }
   .biography > div:first-child {
     display: grid;

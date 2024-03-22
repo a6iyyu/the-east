@@ -18,6 +18,10 @@
 }
 
 @media screen and (max-width: 3120px) {
+  br::selection,
+  img::selection {
+    background: none;
+  }
   a {
     color: #e4e4e4;
     text-decoration: none;
@@ -42,14 +46,17 @@
     background-color: #e3e3e3;
   }
   #scroll-to-top {
-    height: 7rem;
-    width: 7rem;
+    height: 6rem;
+    width: 6rem;
     cursor: pointer;
     bottom: 4rem;
     right: 4rem;
   }
   #scroll-to-top:hover {
     background-color: #d9d9d9 !important;
+  }
+  #scroll-to-top img {
+    width: 60px;
   }
 }
 
@@ -100,13 +107,8 @@
     right: 6rem;
   }
   #scroll-to-top {
-    height: 6rem;
-    width: 6rem;
     bottom: 3rem;
     right: 3rem;
-  }
-  #scroll-to-top img {
-    width: 60px;
   }
 }
 
