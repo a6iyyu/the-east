@@ -10,6 +10,20 @@
     color: #e1e1e1 !important;
     text-decoration: underline;
   }
+  .gradial-blur,
+  .gradial-blur-2 {
+    height: 10rem;
+    width: 10rem;
+    filter: blur(9rem);
+    z-index: 0;
+  }
+  .gradial-blur {
+    background-color: #ff85ad;
+  }
+  .gradial-blur-2 {
+    background-color: #1fddff;
+    right: 0;
+  }
   .hero h1,
   .hero h3,
   .hero-2 h3,
@@ -51,7 +65,8 @@
 
 @media screen and (max-width: 864px) {
   .hero,
-  .hero-2 {
+  .hero-2,
+  .masyarakat {
     width: 85% !important;
   }
 }

@@ -95,7 +95,8 @@ p {
   header > section:last-child {
     width: 20% !important;
   }
-  header > section:last-child a {
+  header > section:last-child a,
+  header > section:last-child p {
     display: none !important;
   }
   header > section:last-child i {
