@@ -49,9 +49,9 @@
       </a>
     </section>
     <section class="d-flex h-100 w-50 align-items-center justify-content-end">
-      <a href="/src/pages/overview.html" class="fw-medium me-5">Overview</a>
-      <a href="/src/pages/struggle.html" class="fw-medium me-5">Struggle</a>
-      <a href="/src/pages/nowadays.html" class="fw-medium">Nowadays</a>
+      <p class="fw-medium me-5 text-light" id="overview-button">Overview</p>
+      <p class="fw-medium me-5 text-light" id="struggle-button">Struggle</p>
+      <p class="fw-medium text-light" id="nowadays-button">Nowadays</p>
       <i class="bi bi-list bg-light d-none display-5" id="dropdown-button"></i>
     </section>
   </header>
@@ -59,26 +59,112 @@
     class="d-flex flex-column opacity-0 position-absolute rounded-3 bg-light"
     id="dropdown-menu"
   >
-    <a
-      href="/src/pages/overview.html"
-      class="fw-medium px-4 py-3 rounded-3 text-dark"
-    >
+    <p class="fw-medium px-4 py-3 rounded-3 text-dark" id="overview-button">
       Overview
-    </a>
-    <a
-      href="/src/pages/struggle.html"
-      class="fw-medium px-4 py-3 rounded-3 text-dark"
-    >
+    </p>
+    <p class="fw-medium px-4 py-3 rounded-3 text-dark" id="struggle-button">
       Struggle
-    </a>
-    <a
-      href="/src/pages/nowadays.html"
-      class="fw-medium px-4 py-3 rounded-3 text-dark"
-    >
+    </p>
+    <p class="fw-medium px-4 py-3 rounded-3 text-dark" id="nowadays-button">
       Nowadays
-    </a>
+    </p>
   </div>
-  <body style="height: 50rem"></body>
+  <body>
+    <section
+      class="hero mx-auto d-flex h-auto w-75 flex-column"
+      style="margin: 6rem 0 4rem 0"
+    >
+      <h1 class="mx-auto fw-bold text-light pe-none" id="overview-section">
+        BERKENALAN DENGAN PAPUA
+      </h1>
+      <br />
+      <br />
+      <br />
+      <!-- Kondisi Geografis -->
+      <div class="d-flex h-auto w-100">
+        <div class="h-auto w-50 d-grid place-items-center">
+          <h3
+            class="fw-bold pe-none text-light"
+            style="letter-spacing: 0.175rem"
+          >
+            Kondisi Geografis
+          </h3>
+          <br />
+          <span
+            class="d-grid h-auto place-items-center pe-none"
+            style="grid-template-columns: 1fr 1fr; gap: 2rem"
+          >
+            <p class="text-light pe-none" style="text-align: justify">
+              Papua merupakan pulau terluas di Indonesia, dengan luas daratan
+              21,9% dari total tanah seluruh Indonesia yaitu 421.981 km
+              <sup>2</sup>, membujur dari barat ke timur (Sorong - Jayapura)
+              sepanjang 1.200 km (744 mil) dan dari utara ke selatan (Jayapura -
+              Merauke) sepanjang 736 km (456 mil). Papua juga memiliki banyak
+              pulau yang berjejer
+            </p>
+            <p class="text-light pe-none" style="text-align: justify">
+              di sepanjang pesisirnya. Di pesisir utara terdapat Pulau Biak,
+              Numfor, Yapen, dan Mapia. Di sebelah barat terdapat Pulau
+              Salawati, Batanta, Gag, Waigeo, dan Yefman. Di pesisir Selatan
+              terdapat Pulau Kalepon, Komoran, Adi, Dolak, dan Panjang. Luas
+              wilayah Provinsi Papua yaitu 312.224,37 km<sup>2</sup>.
+            </p>
+          </span>
+        </div>
+        <div class="d-flex h-auto w-50 align-items-center justify-content-end">
+          <img src="/public/raja-ampat.jfif" alt="" width="400" />
+        </div>
+      </div>
+    </section>
+    <!-- Kondisi Topografi -->
+    <section
+      class="hero-2 mx-auto d-flex h-auto w-75"
+      style="margin-bottom: 5rem"
+    >
+      <div class="d-flex h-auto w-50 align-items-center justify-content-start">
+        <img src="/public/puncak-jayawijaya.jfif" alt="" width="400" />
+      </div>
+      <div class="h-auto w-50 d-grid place-items-center">
+        <h3 class="fw-bold pe-none text-light" style="letter-spacing: 0.175rem">
+          Kondisi Topografi
+        </h3>
+        <br />
+        <span
+          class="d-grid h-auto place-items-center pe-none"
+          style="grid-template-columns: 1fr 1fr; gap: 2rem"
+        >
+          <p class="text-light pe-none" style="text-align: justify">
+            Papua merupakan pulau terluas di Indonesia, dengan luas daratan
+            21,9% dari total tanah seluruh Indonesia yaitu 421.981 km
+            <sup>2</sup>, membujur dari barat ke timur (Sorong - Jayapura)
+            sepanjang 1.200 km (744 mil) dan dari utara ke selatan (Jayapura -
+            Merauke) sepanjang 736 km (456 mil). Papua juga memiliki banyak
+            pulau yang berjejer
+          </p>
+          <p class="text-light pe-none" style="text-align: justify">
+            di sepanjang pesisirnya. Di pesisir utara terdapat Pulau Biak,
+            Numfor, Yapen, dan Mapia. Di sebelah barat terdapat Pulau Salawati,
+            Batanta, Gag, Waigeo, dan Yefman. Di pesisir Selatan terdapat Pulau
+            Kalepon, Komoran, Adi, Dolak, dan Panjang. Luas wilayah Provinsi
+            Papua yaitu 312.224,37 km<sup>2</sup>.
+          </p>
+        </span>
+      </div>
+    </section>
+    <!-- Masyarakat -->
+    <section class="masyarakat mx-auto h-auto w-75" style="margin-top: 5rem">
+      <h3 class="fw-bold pe-none text-light" style="margin-bottom: 1rem">
+        Masyarakat
+      </h3>
+      <p class="pe-none text-light" style="text-align: justify">
+        Papua memiliki ratusan etnik dengan budaya dan adat istiadat dengan
+        variasi topografinya. Secara garis besar, penduduk Papua dapat dibedakan
+        menjadi tiga kelompok besar masyarakat, yaitu:
+      </p>
+      <br />
+      <br />
+    </section>
+  </body>
   <footer></footer>
   <script type="text/javascript" src="/src/scripts/global.js"></script>
   <script
