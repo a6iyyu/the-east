@@ -1,4 +1,4 @@
-<h1 align="justify">
+<h1 align="center">
 The East
 </h1>
 

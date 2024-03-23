@@ -69,4 +69,23 @@
   .masyarakat {
     width: 85% !important;
   }
+  .masyarakat h3 {
+    text-align: center;
+  }
+  .masyarakat > section > div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .masyarakat img,
+  .masyarakat span {
+    width: 100% !important;
+  }
+  .masyarakat img {
+    margin-bottom: 1.5rem;
+  }
+  .masyarakat span {
+    margin: 0 !important;
+    text-align-last: center !important;
+  }
 }
