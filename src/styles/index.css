@@ -18,7 +18,8 @@
     background-color: #d3d3d3;
   }
   .gradial-blur,
-  .gradial-blur-2 {
+  .gradial-blur-2,
+  .gradial-blur-3 {
     height: 10rem;
     width: 10rem;
     filter: blur(9rem);
@@ -31,10 +32,15 @@
     background-color: #1fddff;
     right: 0;
   }
+  .gradial-blur-3 {
+    background-color: #be3475;
+    left: 0;
+  }
   .papua h2,
   .hero h1,
   .hero h3,
-  .hero-2 h3 {
+  .hero-2 h3,
+  .masyarakat h3 {
     font-family: "Lustria", "DM Sans", "Open Sans", "Helvetica Neue", sans-serif;
   }
   .papua {
@@ -47,6 +53,21 @@
   .hero-2 img {
     border-radius: 35% 65% 75% 25% / 25% 45% 55% 75%;
     box-shadow: 0 0 4rem #bcbcbc50;
+  }
+  .masyarakat > div {
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .masyarakat > div > div {
+    width: 90%;
+  }
+  .masyarakat > div > div > div {
+    background-color: #242424;
+    padding: 1.5rem 0 0.75rem 0;
+  }
+  .masyarakat p {
+    width: 80%;
+    text-align: justify;
   }
 }
 
