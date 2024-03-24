@@ -29,12 +29,12 @@ const DropdownButton = document.getElementById("dropdown-button");
 const DropdownMenu = document.getElementById("dropdown-menu");
 let open = false;
 
-document.body.addEventListener("click", (e) => {
-  if (!DropdownButton.contains(e.target)) {
-    DropdownMenu.classList.add("opacity-0");
-    open = false;
-  }
-});
+// document.body.addEventListener("click", (e) => {
+//   if (!DropdownButton.contains(e.target)) {
+//     DropdownMenu.classList.add("opacity-0");
+//     open = false;
+//   }
+// });
 
 DropdownButton.addEventListener("click", () => {
   open = !open;
@@ -53,13 +53,3 @@ const DropdownMediaQuery = () => {
 };
 
 window.addEventListener("resize", DropdownMediaQuery);
-
-// Scroll Into View
-const OverviewButton = document.getElementById("overview-button");
-const OverviewSection = document.getElementById("overview-section");
-
-OverviewButton.addEventListener("click", () => {
-  OverviewSection.scrollIntoView({
-    behavior: "smooth",
-  });
-});

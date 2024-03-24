@@ -10,6 +10,13 @@
     color: #e1e1e1 !important;
     text-decoration: underline;
   }
+  #dropdown-menu p {
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  #dropdown-menu p:hover {
+    background-color: #d3d3d3;
+  }
   .gradial-blur,
   .gradial-blur-2 {
     height: 10rem;
@@ -24,11 +31,14 @@
     background-color: #1fddff;
     right: 0;
   }
+  .papua h2,
   .hero h1,
   .hero h3,
-  .hero-2 h3,
-  .masyarakat h3 {
+  .hero-2 h3 {
     font-family: "Lustria", "DM Sans", "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .papua {
+    margin: 8rem 0;
   }
   .hero img {
     border-radius: 76% 24% 23% 77% / 51% 39% 61% 49%;
@@ -65,27 +75,7 @@
 
 @media screen and (max-width: 864px) {
   .hero,
-  .hero-2,
-  .masyarakat {
+  .hero-2 {
     width: 85% !important;
-  }
-  .masyarakat h3 {
-    text-align: center;
-  }
-  .masyarakat > section > div {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .masyarakat img,
-  .masyarakat span {
-    width: 100% !important;
-  }
-  .masyarakat img {
-    margin-bottom: 1.5rem;
-  }
-  .masyarakat span {
-    margin: 0 !important;
-    text-align-last: center !important;
   }
 }
