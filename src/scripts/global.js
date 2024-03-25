@@ -39,9 +39,9 @@ let open = false;
 DropdownButton.addEventListener("click", () => {
   open = !open;
   if (open) {
-    DropdownMenu.classList.remove("opacity-0");
+    DropdownMenu.classList.remove("d-none");
   } else {
-    DropdownMenu.classList.add("opacity-0");
+    DropdownMenu.classList.add("d-none");
   }
 });
 
@@ -53,3 +53,14 @@ const DropdownMediaQuery = () => {
 };
 
 window.addEventListener("resize", DropdownMediaQuery);
+
+// Navbar color
+const nav = document.querySelector("nav");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 70) {
+    nav.classList.remove("navTransparent");
+  } else {
+    nav.classList.add("navTransparent");
+  }
+});
