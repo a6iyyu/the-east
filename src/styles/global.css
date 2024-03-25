@@ -31,7 +31,7 @@ p {
     text-decoration: none;
     transition: all 300ms ease-in-out;
   }
-  header > section:nth-child(2) > a:hover {
+  nav > section:nth-child(2) > a:hover {
     color: #dedede;
     text-decoration: underline;
   }
@@ -77,29 +77,32 @@ p {
 }
 
 @media screen and (max-width: 1440px) {
+  
 }
 
 @media screen and (max-width: 1280px) {
+  
 }
 
 @media screen and (max-width: 1160px) {
-  header > section:first-child {
+  
+  nav > section:first-child {
     width: 40% !important;
   }
-  header > section:last-child {
+  nav > section:last-child {
     width: 20% !important;
   }
-  header > section:last-child a,
-  header > section:last-child p {
+  nav > section:last-child a,
+  nav > section:last-child p {
     display: none !important;
   }
-  header > section:last-child i {
+  nav > section:last-child i {
     cursor: pointer;
     display: flex !important;
     padding: 0.75rem;
     transition: all 300ms ease-in-out;
   }
-  header > section:last-child i:hover {
+  nav > section:last-child i:hover {
     background-color: #d3d3d3 !important;
   }
   #dropdown-menu {
