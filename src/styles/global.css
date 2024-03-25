@@ -83,12 +83,6 @@ p {
 }
 
 @media screen and (max-width: 1160px) {
-}
-
-@media screen and (max-width: 1024px) {
-}
-
-@media screen and (max-width: 864px) {
   header > section:first-child {
     width: 40% !important;
   }
@@ -111,6 +105,12 @@ p {
   #dropdown-menu {
     right: 6rem;
   }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 864px) {
   #scroll-to-top {
     bottom: 3rem;
     right: 3rem;

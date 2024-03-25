@@ -54,14 +54,17 @@
     border-radius: 35% 65% 75% 25% / 25% 45% 55% 75%;
     box-shadow: 0 0 4rem #bcbcbc50;
   }
-  .masyarakat > div {
+  .masyarakat {
+    margin: 3rem 0;
+  }
+  .masyarakat > div:last-child {
     place-items: center;
     grid-template-columns: repeat(3, 1fr);
   }
-  .masyarakat > div > div {
+  .masyarakat > div:last-child > div {
     width: 90%;
   }
-  .masyarakat > div > div > div {
+  .masyarakat > div:last-child > div > div {
     background-color: #242424;
     padding: 1.5rem 0 0.75rem 0;
   }
@@ -71,7 +74,40 @@
   }
 }
 
+@media screen and (max-width: 1280px) {
+  .masyarakat {
+    margin: 3rem 0 1rem 0;
+  }
+  .masyarakat > div:last-child {
+    grid-template-columns: 1fr;
+  }
+  .masyarakat > div:last-child > div {
+    margin-bottom: 2rem;
+  }
+  .masyarakat p {
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 1160px) {
+  .papua {
+    margin: 7rem 0 5rem 0;
+    flex-direction: column-reverse;
+  }
+  .papua > div {
+    width: 100% !important;
+  }
+  .papua h2,
+  .hero h1,
+  .hero h3,
+  .hero-2 h3 {
+    text-align: center;
+  }
+  .papua img {
+    margin: auto auto 5rem auto;
+    width: 80% !important;
+  }
   .hero > div {
     flex-direction: column-reverse;
   }
@@ -82,15 +118,14 @@
   .hero-2 > div {
     width: 100% !important;
   }
-  .hero h1,
-  .hero h3,
-  .hero-2 h3 {
-    text-align: center;
-  }
   .hero > div > div:last-child,
   .hero-2 > div:first-child {
     justify-content: center !important;
     margin-bottom: 3rem;
+  }
+  .hero img,
+  .hero-2 img {
+    width: 100% !important;
   }
 }
 
