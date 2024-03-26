@@ -4,7 +4,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: "Inter", "DM Sans", "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -37,7 +37,6 @@ p {
   }
   body {
     background-image: linear-gradient(to top left, #242424, #404040);
-    display: block;
     margin: 0;
     opacity: 1;
     overflow-x: hidden;
@@ -53,17 +52,17 @@ p {
     background-color: #e3e3e3;
   }
   #scroll-to-top {
-    height: 6rem;
-    width: 6rem;
+    height: 64px;
+    width: 64px;
     cursor: pointer;
-    bottom: 4rem;
-    right: 4rem;
+    bottom: 44px;
+    right: 32px;
   }
   #scroll-to-top:hover {
     background-color: #d9d9d9 !important;
   }
   #scroll-to-top img {
-    width: 60px;
+    width: 32px;
   }
 }
 
@@ -86,13 +85,18 @@ p {
 }
 
 @media screen and (max-width: 1160px) {
-  header > section:first-child {
+  
+  /* nav > section:first-child {
     width: 40% !important;
   }
   header > section:last-child {
     width: 20% !important;
+  } */
+  nav > section:last-child a,
+  nav > section:last-child p {
+    display: none !important;
   }
-  header > section:last-child i {
+  nav > section:last-child i {
     cursor: pointer;
     display: flex !important;
     padding: 0.75rem;
@@ -102,7 +106,7 @@ p {
     background-color: #d3d3d3 !important;
   }
   #dropdown-menu {
-    right: 6rem;
+    right: 50px;
   }
 }
 
@@ -110,34 +114,34 @@ p {
 }
 
 @media screen and (max-width: 864px) {
-  #scroll-to-top {
+  /* #scroll-to-top {
     bottom: 3rem;
     right: 3rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
-  #dropdown-menu {
+  /* #dropdown-menu {
     right: 5.375rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 640px) {
-  #dropdown-menu {
-    right: 4.25rem;
-  }
+  /* #dropdown-menu {
+    right: 64px;
+  } */
 }
 
 @media screen and (max-width: 480px) {
-  #dropdown-menu {
+  /* #dropdown-menu {
     right: 3.5rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 360px) {
-  #dropdown-menu {
+  /* #dropdown-menu {
     right: 2.5rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 324px) {

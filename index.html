@@ -85,6 +85,53 @@
 
 <!-- Beranda -->
 <body>
+  <div id="scroll-indicator" class="position-fixed bg-light" style="height: 0.25rem; z-index: 30; top: 0"></div>
+  <div id="scroll-to-top"
+    class="bg-light d-flex align-items-center justify-content-center invisible opacity-0 position-fixed rounded-circle z-2"
+    style="transition: all 300ms ease-in-out">
+    <img src="/public/scroll-to-top.png" width="85" alt="Scroll To Top" class="fw-bold text-dark" />
+  </div>
+
+  <!-- Navbar -->
+
+  <nav class="mx-auto w-100 d-flex px-5 align-items-center justify-content-between position-fixed" data-aos="fade-in">
+    <section class="d-flex h-100 w-50 align-items-center justify-content-start">
+      <a href="/index.html" class="logo h2 h-auto w-auto text-light">
+        THE EAST
+      </a>
+    </section>
+    <section class="d-flex h-100 w-50 align-items-center justify-content-end">
+      <div class="d-none d-lg-flex">
+        <a href="#" class="fw-medium me-5 text-light" id="overview-button">Beranda</a>
+        <a href="#perjuangan" class="fw-medium me-5 text-light" id="struggle-button">Perjuangan</a>
+        <a href="#" class="fw-medium me-5 text-light" id="hero-button">Pahlawan</a>
+        <a href="#" class="fw-medium text-light" id="nowadays-button">Saat Ini</a>
+      </div>
+      <button class="bg-light display-5 p-2 rounded-1 d-block d-lg-none" id="dropdown-button"
+        onclick="toggleNavDropdown()">
+        <i class="bi bi-list"></i>
+      </button>
+    </section>
+    <div class="d-flex flex-column position-absolute rounded-1 bg-light d-none" style="top: 5rem" id="dropdown-menu">
+      <a href="#" class="fw-medium px-4 py-4 rounded-1 text-dark" id="overview-button">
+        Beranda
+      </a>
+      <a href="#perjuangan" class="fw-medium px-4 py-4 rounded-1 text-dark" id="struggle-button">
+        Perjuangan
+      </a>
+      <a href="#" class="fw-medium px-4 py-4 rounded-1 text-dark" id="hero-button">
+        Pahlawan
+      </a>
+      <a href="#" class="fw-medium px-4 py-4 rounded-1 text-dark" id="nowadays-button">
+        Saat Ini
+      </a>
+    </div>
+  </nav>
+
+  <!-- Navbar End -->
+
+  <!-- Beranda -->
+
   <div class="gradial-blur position-absolute rounded-5"></div>
   <section class="papua mx-auto d-flex h-auto w-75" data-aos="fade-in">
     <div class="my-auto h-auto w-50">
@@ -98,20 +145,89 @@
         tambang tembaga dan emas Freeport.
       </p>
     </div>
-    <img src="/public/vector-papua.png" alt="Papua" class="h-auto w-50 text-light" />
+    <img src="/public/vector-papua.png" alt="Papua" class="h-auto w-auto w-md-50 text-light" />
   </section>
 
   <!-- Kondisi Geografis -->
-  <section class="hero mx-auto d-flex h-auto w-75 flex-column" style="margin: 4rem 0">
+
+  <section class="hero mx-auto d-flex flex-column-reverse justify-content-evenly flex-lg-row w-75 mx-auto gap-5"
+    style="margin: 4rem 0">
+    <div class="h-auto w-100 w-md-50 d-flex flex-column">
+      <h3 class="fw-bold pe-none text-light text-decoration-underline" style="letter-spacing: 0.175rem"
+        data-aos="fade-up">
+        Kondisi Geografis
+      </h3>
+      <br />
+      <span class="d-flex flex-column flex-md-row gap-4 h-auto place-items-center pe-none">
+        <p class="text-light pe-none" style="text-align: left" data-aos="fade-up">
+          Papua merupakan pulau terluas di Indonesia, dengan luas daratan
+          21,9% dari total tanah seluruh Indonesia yaitu 421.981 km
+          <sup>2</sup>, membujur dari barat ke timur (Sorong - Jayapura)
+          sepanjang 1.200 km (744 mil) dan dari utara ke selatan (Jayapura -
+          Merauke) sepanjang 736 km (456 mil). Papua juga memiliki banyak
+          pulau yang berjejer
+        </p>
+        <p class="text-light pe-none" style="text-align: left" data-aos="fade-up">
+          di sepanjang pesisirnya. Di pesisir utara terdapat Pulau Biak,
+          Numfor, Yapen, dan Mapia. Di sebelah barat terdapat Pulau
+          Salawati, Batanta, Gag, Waigeo, dan Yefman. Di pesisir Selatan
+          terdapat Pulau Kalepon, Komoran, Adi, Dolak, dan Panjang. Luas
+          wilayah Provinsi Papua yaitu 312.224,37 km<sup>2</sup>.
+        </p>
+      </span>
+    </div>
+    <div class="d-flex h-auto w-100 w-md-50 align-items-center object-fit-cover" data-aos="fade-in">
+      <img src="/public/raja-ampat.jfif" class=" w-75 h-auto mx-auto object-fit-cover" alt="" width="400" />
+    </div>
+  </section>
+
+  <!-- Kondisi Topografi -->
+
+  <section class="hero mx-auto d-flex flex-column-reverse flex-lg-row-reverse justify-content-evenly w-75 mx-auto gap-5"
+    style="margin: 4rem 0">
+    <div class="h-auto w-100 w-md-50 d-flex flex-column">
+      <h3 class="fw-bold pe-none text-light text-decoration-underline" style="letter-spacing: 0.175rem"
+        data-aos="fade-up">
+        Kondisi Topografi
+      </h3>
+      <br />
+      <span class="d-flex flex-column flex-md-row h-auto place-items-center pe-none z-1 gap-4">
+        <p class="text-light pe-none" style="text-align: left" data-aos="fade-up">
+          Papua merupakan pulau terluas di Indonesia, dengan luas daratan
+          21,9% dari total tanah seluruh Indonesia yaitu 421.981 km
+          <sup>2</sup>, membujur dari barat ke timur (Sorong - Jayapura)
+          sepanjang 1.200 km (744 mil) dan dari utara ke selatan (Jayapura -
+          Merauke) sepanjang 736 km (456 mil). Papua juga memiliki banyak
+          pulau yang berjejer
+        </p>
+        <p class="text-light pe-none" style="text-align: left" data-aos="fade-up">
+          di sepanjang pesisirnya. Di pesisir utara terdapat Pulau Biak,
+          Numfor, Yapen, dan Mapia. Di sebelah barat terdapat Pulau
+          Salawati, Batanta, Gag, Waigeo, dan Yefman. Di pesisir Selatan
+          terdapat Pulau Kalepon, Komoran, Adi, Dolak, dan Panjang. Luas
+          wilayah Provinsi Papua yaitu 312.224,37 km<sup>2</sup>.
+        </p>
+      </span>
+    </div>
+    <div class="d-flex h-auto w-100 w-md-50 align-items-center object-fit-cover" data-aos="fade-up">
+      <img src="/public/puncak-jayawijaya.jfif" class=" w-75 h-auto mx-auto object-fit-cover" alt="" width="400" />
+    </div>
+  </section>
+
+  <!-- 
+  <section class="hero-2 mx-auto d-flex h-auto w-75 flex-column" style="margin-bottom: 3rem">
     <div class="d-flex h-auto w-100">
-      <div class="h-auto w-50 d-grid place-items-center">
+      <div class="d-flex h-auto w-50 align-items-center justify-content-start z-1">
+        <img src="/public/puncak-jayawijaya.jfif" alt="" width="400" data-aos="fade-in" />
+      </div>
+      <div class="h-auto w-auto w-md-50 d-grid place-items-center">
         <h3 class="fw-bold pe-none text-light text-decoration-underline" style="letter-spacing: 0.175rem"
           data-aos="fade-up">
-          Kondisi Geografis
+          Kondisi Topografi
         </h3>
         <br />
-        <span class="d-grid h-auto place-items-center pe-none" style="grid-template-columns: 1fr 1fr; gap: 2rem">
-          <p class="text-light pe-none" style="text-align: justify" data-aos="fade-right">
+        <span class="d-flex flex-column flex-md-row h-auto place-items-center pe-none z-1 gap-4">
+          <p class="text-light pe-none" style="text-align: left" data-aos="fade-right">
             Papua merupakan pulau terluas di Indonesia, dengan luas daratan
             21,9% dari total tanah seluruh Indonesia yaitu 421.981 km
             <sup>2</sup>, membujur dari barat ke timur (Sorong - Jayapura)
@@ -127,46 +243,11 @@
             wilayah Provinsi Papua yaitu 312.224,37 km<sup>2</sup>.
           </p>
         </span>
-      </div>
-      <div class="d-flex h-auto w-50 align-items-center justify-content-end" data-aos="fade-in">
-        <img src="/public/raja-ampat.jfif" alt="" width="400" />
+        <div class="gradial-blur-2 position-absolute rounded-5 z-0"></div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <!-- Kondisi Topografi -->
-  <section class="hero-2 mx-auto d-flex h-auto w-75" style="margin-bottom: 3rem">
-    <div class="d-flex h-auto w-50 align-items-center justify-content-start z-1">
-      <img src="/public/puncak-jayawijaya.jfif" alt="" width="400" data-aos="fade-in" />
-    </div>
-    <div class="h-auto w-50 d-grid place-items-center">
-      <h3 class="fw-bold pe-none text-light text-decoration-underline" style="letter-spacing: 0.175rem"
-        data-aos="fade-up">
-        Kondisi Topografi
-      </h3>
-      <br />
-      <span class="d-grid h-auto place-items-center pe-none z-1" style="grid-template-columns: 1fr 1fr; gap: 2rem">
-        <p class="text-light pe-none" style="text-align: justify" data-aos="fade-right">
-          Papua merupakan pulau terluas di Indonesia, dengan luas daratan
-          21,9% dari total tanah seluruh Indonesia yaitu 421.981 km
-          <sup>2</sup>, membujur dari barat ke timur (Sorong - Jayapura)
-          sepanjang 1.200 km (744 mil) dan dari utara ke selatan (Jayapura -
-          Merauke) sepanjang 736 km (456 mil). Papua juga memiliki banyak
-          pulau yang berjejer
-        </p>
-        <p class="text-light pe-none" style="text-align: justify" data-aos="fade-left">
-          di sepanjang pesisirnya. Di pesisir utara terdapat Pulau Biak,
-          Numfor, Yapen, dan Mapia. Di sebelah barat terdapat Pulau Salawati,
-          Batanta, Gag, Waigeo, dan Yefman. Di pesisir Selatan terdapat Pulau
-          Kalepon, Komoran, Adi, Dolak, dan Panjang. Luas wilayah Provinsi
-          Papua yaitu 312.224,37 km<sup>2</sup>.
-        </p>
-      </span>
-      <div class="gradial-blur-2 position-absolute rounded-5 z-0"></div>
-    </div>
-  </section>
-
-  <!-- Masyarakat -->
   <section class="masyarakat mx-auto d-flex h-auto w-75 flex-column">
     <div class="gradial-blur-3 position-absolute rounded-5 z-0"></div>
     <h3 class="fw-bold pe-none text-center text-light text-decoration-underline" style="letter-spacing: 0.175rem"
@@ -175,9 +256,9 @@
     </h3>
     <br />
     <div class="d-grid">
-      <div class="h-auto" data-aos="fade-right">
-        <img src="/public/masyarakat-papua-laut.jpg" alt="Masyarakat Papua Laut" class="h-auto w-100 rounded-top-5" />
-        <div class="h-100 w-100 rounded-bottom-4">
+      <div class="h-auto" data-aos="fade-up">
+        <img src="/public/masyarakat-papua-laut.jpg" alt="Masyarakat Papua Laut" class="h-auto w-100 rounded-top-3" />
+        <div class="h-100 w-100 rounded-bottom-3">
           <p class="mx-auto pe-none text-light">
             Nelayan, pekebun, dan peternak menjadi pekerjaan utama.
           </p>
@@ -185,16 +266,16 @@
       </div>
       <div class="h-auto" data-aos="fade-up">
         <img src="/public/masyarakat-papua-pedalaman.jpg" alt="Masyarakat Papua Laut"
-          class="h-auto w-100 rounded-top-5" />
-        <div class="h-100 w-100 rounded-bottom-4">
+          class="h-auto w-100 rounded-top-3" />
+        <div class="h-100 w-100 rounded-bottom-3">
           <p class="mx-auto pe-none text-light">
             Suku paling banyak di Papua adalah Suku Dani.
           </p>
         </div>
       </div>
-      <div class="h-auto" data-aos="fade-left">
-        <img src="/public/honai.jpg" alt="Masyarakat Papua Laut" class="h-auto w-100 rounded-top-5" />
-        <div class="h-100 w-100 rounded-bottom-4">
+      <div class="h-auto" data-aos="fade-up">
+        <img src="/public/honai.jpg" alt="Masyarakat Papua Laut" class="h-auto w-100 rounded-top-3" />
+        <div class="h-100 w-100 rounded-bottom-3">
           <p class="mx-auto pe-none text-light">
             Papua memiliki rumah adat bernama Honai.
           </p>
@@ -203,6 +284,14 @@
     </div>
   </section>
   <hr class="mx-auto w-75 bg-light" style="margin-bottom: 3rem; height: 0.25rem" />
+
+  <!-- Beranda end -->
+
+  <!-- Perjuangan -->
+
+  <section id="perjuangan"></section>
+
+  <!-- Perjuangan end -->
 </body>
 <footer></footer>
 

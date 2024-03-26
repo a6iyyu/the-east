@@ -29,21 +29,29 @@ const DropdownButton = document.getElementById("dropdown-button");
 const DropdownMenu = document.getElementById("dropdown-menu");
 let open = false;
 
-document.body.addEventListener("click", (e) => {
-  if (!DropdownButton.contains(e.target)) {
-    DropdownMenu.classList.add("opacity-0");
-    open = false;
-  }
-});
-
-DropdownButton.addEventListener("click", () => {
+// document.body.addEventListener("click", (e) => {
+//   if (!DropdownButton.contains(e.target)) {
+//     DropdownMenu.classList.add("opacity-0");
+//     open = false;
+//   }
+// });
+const toggleNavDropdown = () =>{
   open = !open;
   if (open) {
     DropdownMenu.classList.remove("opacity-0");
   } else {
     DropdownMenu.classList.add("opacity-0");
   }
-});
+}
+
+// DropdownButton.addEventListener("click", () => {
+//   open = !open;
+//   if (open) {
+//     DropdownMenu.classList.remove("d-none");
+//   } else {
+//     DropdownMenu.classList.add("d-none");
+//   }
+// });
 
 const DropdownMediaQuery = () => {
   if (window.matchMedia("(min-width: 863px)").matches) {
