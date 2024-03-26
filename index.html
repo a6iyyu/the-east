@@ -6,65 +6,91 @@
   <meta name="description" content="" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="public/papua.svg" />
+  <link rel="icon" href="/public/papua.svg" />
   <title>Introduction</title>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link 
+    rel="stylesheet" 
+    href="https://unpkg.com/aos@next/dist/aos.css" 
+  />
+  <link
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous" 
+  />
+  <link
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" 
+  />
   <link rel="stylesheet" href="/src/styles/global.css" />
   <link rel="stylesheet" href="/src/styles/index.css" />
 </head>
 
+<div 
+  id="scroll-indicator" 
+  class="position-fixed bg-light" 
+  style="height: 0.25rem; z-index: 999"
+></div>
+<div 
+  id="scroll-to-top" 
+  class="bg-light d-flex align-items-center justify-content-center invisible opacity-0 position-fixed rounded-circle z-2" 
+  style="transition: all 300ms ease-in-out"
+>
+  <img 
+    src="/public/scroll-to-top.png" 
+    width="85" 
+    alt="Scroll To Top" 
+    class="fw-bold text-dark" 
+  />
+</div>
+
+<!-- Navbar -->
+<header class="mx-auto w-75 d-flex align-items-center justify-content-between" style="height: 9rem" data-aos="fade-in">
+  <section class="d-flex h-100 w-25 align-items-center justify-content-start">
+    <a href="/index.html" class="logo h2 h-auto w-auto text-light">
+      <!-- <img src="" alt="Logo" width="" /> -->
+      THE EAST
+    </a>
+  </section>
+  <section class="d-flex h-100 w-50 align-items-center justify-content-end">
+    <a href="index.html" class="d-none d-xl-flex fw-medium me-5 text-light" id="overview-button">
+      Beranda
+    </a>
+    <a href="/src/pages/pahlawan.html" class="d-none d-xl-flex fw-medium me-5 text-light" id="hero-button">
+      Pahlawan
+    </a>
+    <a href="/src/pages/perjuangan.html" class="d-none d-xl-flex fw-medium me-5 text-light" id="struggle-button">
+      Perjuangan
+    </a>
+    <a href="/src/pages/saat-ini.html" class="d-none d-xl-flex fw-medium text-light" id="nowadays-button">
+      Saat Ini
+    </a>
+    <i class="bi bi-list bg-light d-none display-5" id="dropdown-button"></i>
+  </section>
+</header>
+<div class="d-flex flex-column opacity-0 position-absolute rounded-3 bg-light" id="dropdown-menu">
+  <a href="index.html" class="fw-medium px-4 py-4 rounded-3 text-dark" id="overview-button">
+    Beranda
+  </a>
+  <a href="/src/pages/pahlawan.html" class="fw-medium px-4 py-4 rounded-3 text-dark" id="hero-button">
+    Pahlawan
+  </a>
+  <a href="/src/pages/perjuangan.html" class="fw-medium px-4 py-4 rounded-3 text-dark" id="struggle-button">
+    Perjuangan
+  </a>
+  <a href="/src/pages/saat-ini.html" class="fw-medium px-4 py-4 rounded-3 text-dark" id="nowadays-button">
+    Saat Ini
+  </a>
+</div>
+
+<!-- Beranda -->
 <body>
-  <div id="scroll-indicator" class="position-fixed bg-light" style="height: 0.25rem; z-index: 30; top: 0;"></div>
-  <div id="scroll-to-top"
-    class="bg-light d-flex align-items-center justify-content-center invisible opacity-0 position-fixed rounded-circle z-2"
-    style="transition: all 300ms ease-in-out">
-    <img src="/public/scroll-to-top.png" width="85" alt="Scroll To Top" class="fw-bold text-dark" />
-  </div>
-  
-  <!-- Navbar -->
-  <nav class="mx-auto w-100 d-flex align-items-center justify-content-between position-fixed" data-aos="fade-in">
-    <section class="d-flex h-100 w-25 align-items-center justify-content-start">
-      <a href="/index.html" class="logo h2 h-auto w-auto text-light">
-        <!-- <img src="" alt="Logo" width="" /> -->
-        THE EAST
-      </a>
-    </section>
-    <section class="d-flex h-100 w-lg-50 align-items-center justify-content-end">
-      <div class="d-none d-lg-flex">
-        <a href="#" class="fw-medium me-5 text-light" id="overview-button">Beranda</a>
-        <a href="#" class="fw-medium me-5 text-light" id="hero-button">Pahlawan</a>
-        <a href="#" class="fw-medium me-5 text-light" id="struggle-button">Perjuangan</a>
-        <a href="#" class="fw-medium text-light" id="nowadays-button">Saat Ini</a>
-      </div>
-      <i class="bi bi-list bg-light display-5 p-2 rounded-1 d-block d-lg-none" id="dropdown-button"></i>
-    </section>
-    <div class="d-flex flex-column position-absolute rounded-1 bg-light d-none" style="top: 5rem;" id="dropdown-menu">
-      <p class="fw-medium px-4 py-4 rounded-1 text-dark" id="overview-button">
-        Beranda
-      </p>
-      <p class="fw-medium px-4 py-4 rounded-1 text-dark" id="hero-button">
-        Pahlawan
-      </p>
-      <p class="fw-medium px-4 py-4 rounded-1 text-dark" id="struggle-button">
-        Perjuangan
-      </p>
-      <p class="fw-medium px-4 py-4 rounded-1 text-dark" id="nowadays-button">
-        Saat Ini
-      </p>
-    </div>
-  </nav>
-
-  <!-- Beranda -->
-
   <div class="gradial-blur position-absolute rounded-5"></div>
-  <section class="papua mx-auto d-flex h-auto w-75" data-aos="fade-in" id="beranda">
+  <section class="papua mx-auto d-flex h-auto w-75" data-aos="fade-in">
     <div class="my-auto h-auto w-50">
       <h2 class="display-3 fw-bold pe-none text-light">PAPUA</h2>
       <br />
-      <p class="pe-none text-light" style="letter-spacing: 0.075rem; text-align: left">
+      <p class="pe-none text-light" style="letter-spacing: 0.075rem; text-align: justify">
         Papua adalah sebuah provinsi di Indonesia yang terletak di pulau
         Nugini bagian barat atau west New Guinea. Provinsi ini dulu dikenal
         dengan panggilan Irian Barat sejak tahun 1969 hingga 1973, namanya
@@ -74,8 +100,9 @@
     </div>
     <img src="/public/vector-papua.png" alt="Papua" class="h-auto w-50 text-light" />
   </section>
+
+  <!-- Kondisi Geografis -->
   <section class="hero mx-auto d-flex h-auto w-75 flex-column" style="margin: 4rem 0">
-    <!-- Kondisi Geografis -->
     <div class="d-flex h-auto w-100">
       <div class="h-auto w-50 d-grid place-items-center">
         <h3 class="fw-bold pe-none text-light text-decoration-underline" style="letter-spacing: 0.175rem"
@@ -83,8 +110,8 @@
           Kondisi Geografis
         </h3>
         <br />
-        <span class="d-flex flex-column flex-md-row gap-4 h-auto place-items-center pe-none">
-          <p class="text-light pe-none" style="text-align: left" data-aos="fade-right">
+        <span class="d-grid h-auto place-items-center pe-none" style="grid-template-columns: 1fr 1fr; gap: 2rem">
+          <p class="text-light pe-none" style="text-align: justify" data-aos="fade-right">
             Papua merupakan pulau terluas di Indonesia, dengan luas daratan
             21,9% dari total tanah seluruh Indonesia yaitu 421.981 km
             <sup>2</sup>, membujur dari barat ke timur (Sorong - Jayapura)
@@ -92,7 +119,7 @@
             Merauke) sepanjang 736 km (456 mil). Papua juga memiliki banyak
             pulau yang berjejer
           </p>
-          <p class="text-light pe-none" style="text-align: left" data-aos="fade-left">
+          <p class="text-light pe-none" style="text-align: justify" data-aos="fade-left">
             di sepanjang pesisirnya. Di pesisir utara terdapat Pulau Biak,
             Numfor, Yapen, dan Mapia. Di sebelah barat terdapat Pulau
             Salawati, Batanta, Gag, Waigeo, dan Yefman. Di pesisir Selatan
@@ -106,6 +133,7 @@
       </div>
     </div>
   </section>
+
   <!-- Kondisi Topografi -->
   <section class="hero-2 mx-auto d-flex h-auto w-75" style="margin-bottom: 3rem">
     <div class="d-flex h-auto w-50 align-items-center justify-content-start z-1">
@@ -117,8 +145,8 @@
         Kondisi Topografi
       </h3>
       <br />
-      <span class="d-flex flex-column flex-md-row h-auto place-items-center pe-none z-1 gap-4">
-        <p class="text-light pe-none" style="text-align: left" data-aos="fade-right">
+      <span class="d-grid h-auto place-items-center pe-none z-1" style="grid-template-columns: 1fr 1fr; gap: 2rem">
+        <p class="text-light pe-none" style="text-align: justify" data-aos="fade-right">
           Papua merupakan pulau terluas di Indonesia, dengan luas daratan
           21,9% dari total tanah seluruh Indonesia yaitu 421.981 km
           <sup>2</sup>, membujur dari barat ke timur (Sorong - Jayapura)
@@ -126,7 +154,7 @@
           Merauke) sepanjang 736 km (456 mil). Papua juga memiliki banyak
           pulau yang berjejer
         </p>
-        <p class="text-light pe-none" style="text-align: left" data-aos="fade-left">
+        <p class="text-light pe-none" style="text-align: justify" data-aos="fade-left">
           di sepanjang pesisirnya. Di pesisir utara terdapat Pulau Biak,
           Numfor, Yapen, dan Mapia. Di sebelah barat terdapat Pulau Salawati,
           Batanta, Gag, Waigeo, dan Yefman. Di pesisir Selatan terdapat Pulau
@@ -137,6 +165,8 @@
       <div class="gradial-blur-2 position-absolute rounded-5 z-0"></div>
     </div>
   </section>
+
+  <!-- Masyarakat -->
   <section class="masyarakat mx-auto d-flex h-auto w-75 flex-column">
     <div class="gradial-blur-3 position-absolute rounded-5 z-0"></div>
     <h3 class="fw-bold pe-none text-center text-light text-decoration-underline" style="letter-spacing: 0.175rem"
@@ -146,8 +176,8 @@
     <br />
     <div class="d-grid">
       <div class="h-auto" data-aos="fade-right">
-        <img src="/public/masyarakat-papua-laut.jpg" alt="Masyarakat Papua Laut" class="h-auto w-100 rounded-top-3" />
-        <div class="h-100 w-100 rounded-bottom-3">
+        <img src="/public/masyarakat-papua-laut.jpg" alt="Masyarakat Papua Laut" class="h-auto w-100 rounded-top-5" />
+        <div class="h-100 w-100 rounded-bottom-4">
           <p class="mx-auto pe-none text-light">
             Nelayan, pekebun, dan peternak menjadi pekerjaan utama.
           </p>
@@ -155,16 +185,16 @@
       </div>
       <div class="h-auto" data-aos="fade-up">
         <img src="/public/masyarakat-papua-pedalaman.jpg" alt="Masyarakat Papua Laut"
-          class="h-auto w-100 rounded-top-3" />
-        <div class="h-100 w-100 rounded-bottom-3">
+          class="h-auto w-100 rounded-top-5" />
+        <div class="h-100 w-100 rounded-bottom-4">
           <p class="mx-auto pe-none text-light">
             Suku paling banyak di Papua adalah Suku Dani.
           </p>
         </div>
       </div>
       <div class="h-auto" data-aos="fade-left">
-        <img src="/public/honai.jpg" alt="Masyarakat Papua Laut" class="h-auto w-100 rounded-top-3" />
-        <div class="h-100 w-100 rounded-bottom-3">
+        <img src="/public/honai.jpg" alt="Masyarakat Papua Laut" class="h-auto w-100 rounded-top-5" />
+        <div class="h-100 w-100 rounded-bottom-4">
           <p class="mx-auto pe-none text-light">
             Papua memiliki rumah adat bernama Honai.
           </p>
@@ -173,19 +203,28 @@
     </div>
   </section>
   <hr class="mx-auto w-75 bg-light" style="margin-bottom: 3rem; height: 0.25rem" />
-  
-  <!-- Beranda end -->
-
 </body>
 <footer></footer>
-<script type="text/javascript" src="/src/scripts/global.js"></script>
-<script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script
+  type="text/javascript"
+  src="/src/scripts/global.js"
+></script>
+<script
+  type="text/javascript"
+  src="https://unpkg.com/aos@next/dist/aos.js"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" 
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+  crossorigin="anonymous"
+></script>
 <script type="text/javascript">
   AOS.init();
 </script>
-
 </html>

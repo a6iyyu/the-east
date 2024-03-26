@@ -10,4 +10,16 @@
     z-index: 0;
     background-color: #1fddff;
   }
+  .pahlawan-1 {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .pahlawan-1 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }

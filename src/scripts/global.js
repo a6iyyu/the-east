@@ -29,19 +29,19 @@ const DropdownButton = document.getElementById("dropdown-button");
 const DropdownMenu = document.getElementById("dropdown-menu");
 let open = false;
 
-// document.body.addEventListener("click", (e) => {
-//   if (!DropdownButton.contains(e.target)) {
-//     DropdownMenu.classList.add("opacity-0");
-//     open = false;
-//   }
-// });
+document.body.addEventListener("click", (e) => {
+  if (!DropdownButton.contains(e.target)) {
+    DropdownMenu.classList.add("opacity-0");
+    open = false;
+  }
+});
 
 DropdownButton.addEventListener("click", () => {
   open = !open;
   if (open) {
-    DropdownMenu.classList.remove("d-none");
+    DropdownMenu.classList.remove("opacity-0");
   } else {
-    DropdownMenu.classList.add("d-none");
+    DropdownMenu.classList.add("opacity-0");
   }
 });
 
@@ -53,14 +53,3 @@ const DropdownMediaQuery = () => {
 };
 
 window.addEventListener("resize", DropdownMediaQuery);
-
-// Navbar color
-const nav = document.querySelector("nav");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY >= 70) {
-    nav.classList.remove("navTransparent");
-  } else {
-    nav.classList.add("navTransparent");
-  }
-});

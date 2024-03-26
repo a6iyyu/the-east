@@ -31,7 +31,7 @@ p {
     text-decoration: none;
     transition: all 300ms ease-in-out;
   }
-  nav > section:nth-child(2) > a:hover {
+  header > section:nth-child(2) > a:hover {
     color: #dedede;
     text-decoration: underline;
   }
@@ -45,6 +45,9 @@ p {
   }
   .logo {
     font-family: "Lustria", "DM Sans", "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  #dropdown-menu {
+    cursor: pointer;
   }
   #dropdown-menu a:hover {
     background-color: #e3e3e3;
@@ -77,32 +80,25 @@ p {
 }
 
 @media screen and (max-width: 1440px) {
-  
 }
 
 @media screen and (max-width: 1280px) {
-  
 }
 
 @media screen and (max-width: 1160px) {
-  
-  nav > section:first-child {
+  header > section:first-child {
     width: 40% !important;
   }
-  nav > section:last-child {
+  header > section:last-child {
     width: 20% !important;
   }
-  nav > section:last-child a,
-  nav > section:last-child p {
-    display: none !important;
-  }
-  nav > section:last-child i {
+  header > section:last-child i {
     cursor: pointer;
     display: flex !important;
     padding: 0.75rem;
     transition: all 300ms ease-in-out;
   }
-  nav > section:last-child i:hover {
+  header > section:last-child i:hover {
     background-color: #d3d3d3 !important;
   }
   #dropdown-menu {
