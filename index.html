@@ -8,40 +8,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/public/papua.svg" />
   <title>Introduction</title>
-  <link 
-    rel="stylesheet" 
-    href="https://unpkg.com/aos@next/dist/aos.css" 
-  />
-  <link
-    rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
-    crossorigin="anonymous" 
-  />
-  <link
-    rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" 
-  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="/src/styles/global.css" />
   <link rel="stylesheet" href="/src/styles/index.css" />
 </head>
 
-<div 
-  id="scroll-indicator" 
-  class="position-fixed bg-light" 
-  style="height: 0.25rem; z-index: 999"
-></div>
-<div 
-  id="scroll-to-top" 
-  class="bg-light d-flex align-items-center justify-content-center invisible opacity-0 position-fixed rounded-circle z-2" 
-  style="transition: all 300ms ease-in-out"
->
-  <img 
-    src="/public/scroll-to-top.png" 
-    width="85" 
-    alt="Scroll To Top" 
-    class="fw-bold text-dark" 
-  />
+<div id="scroll-indicator" class="position-fixed bg-light" style="height: 0.25rem; z-index: 999"></div>
+<div id="scroll-to-top"
+  class="bg-light d-flex align-items-center justify-content-center invisible opacity-0 position-fixed rounded-circle z-2"
+  style="transition: all 300ms ease-in-out">
+  <img src="/public/scroll-to-top.png" width="85" alt="Scroll To Top" class="fw-bold text-dark" />
 </div>
 
 <!-- Navbar -->
@@ -84,6 +63,7 @@
 </div>
 
 <!-- Beranda -->
+
 <body>
   <div class="gradial-blur position-absolute rounded-5"></div>
   <section class="papua mx-auto d-flex h-auto w-75" data-aos="fade-in">
@@ -171,14 +151,15 @@
   <!-- Masyarakat -->
   <section class="masyarakat mx-auto d-flex h-auto w-75 flex-column">
     <div class="gradial-blur-3 position-absolute rounded-5 z-0"></div>
-    <h3 class="fw-bold pe-none text-center text-light text-decoration-underline" style="letter-spacing: 0.175rem" data-aos="fade-in">
+    <h3 class="fw-bold pe-none text-center text-light text-decoration-underline" style="letter-spacing: 0.175rem"
+      data-aos="fade-in">
       Masyarakat
     </h3>
     <br />
     <div class="d-grid">
       <div class="h-auto" data-aos="fade-up">
-        <img src="/public/masyarakat-papua-laut.jpg" alt="Masyarakat Papua Laut" class="h-auto w-100 rounded-top-5" />
-        <div class="h-100 w-100 rounded-bottom-4">
+        <img src="/public/masyarakat-papua-laut.jpg" alt="Masyarakat Papua Laut" class="h-auto w-100 rounded-top-3" />
+        <div class="h-100 w-100 rounded-bottom-3">
           <p class="mx-auto pe-none text-light">
             Nelayan, pekebun, dan peternak menjadi pekerjaan utama.
           </p>
@@ -186,16 +167,16 @@
       </div>
       <div class="h-auto" data-aos="fade-up">
         <img src="/public/masyarakat-papua-pedalaman.jpg" alt="Masyarakat Papua Laut"
-          class="h-auto w-100 rounded-top-5" />
-        <div class="h-100 w-100 rounded-bottom-4">
+          class="h-auto w-100 rounded-top-3" />
+        <div class="h-100 w-100 rounded-bottom-3">
           <p class="mx-auto pe-none text-light">
             Suku paling banyak di Papua adalah Suku Dani.
           </p>
         </div>
       </div>
       <div class="h-auto" data-aos="fade-up">
-        <img src="/public/honai.jpg" alt="Masyarakat Papua Laut" class="h-auto w-100 rounded-top-5" />
-        <div class="h-100 w-100 rounded-bottom-4">
+        <img src="/public/honai.jpg" alt="Masyarakat Papua Laut" class="h-auto w-100 rounded-top-3" />
+        <div class="h-100 w-100 rounded-bottom-3">
           <p class="mx-auto pe-none text-light">
             Papua memiliki rumah adat bernama Honai.
           </p>
@@ -219,28 +200,261 @@
       untuk otonomi, hak asasi manusia, dan pemenuhan keadilan sosial.
     </p>
   </section>
+  <!-- Perjuangan Papua End -->
+
+  <!-- Pahlawan -->
+
+  <section class="w-75 mx-auto text-light" id="pahlawan">
+    <h3 class="fw-bold pe-none text-center text-light text-decoration-underline" style="letter-spacing: 0.175rem">
+      Pahlawan Dari Papua
+    </h3>
+
+    <p class="my-5">
+      Dalam sejarah, terdapat banyak pahlawan dari papua yang gigih membantu memperjuangkan kemerdekaan dan membantu
+      menyatukan Papua sehingga bisa menjadi bagian dari Republik Indonesia.
+      <br><br>
+      Berikut beberapa pahlawan dari tanah Papua yang berjasa dalam sejarah Indonesia:
+    </p>
+
+    <!-- karosel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card mb-3 w-100 text-light" style="background-color: #242424;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/public/frans-kaisiepo-3.jpg" class="img-fluid rounded-start object-fit-cover w-100 h-100"
+                  alt="Frans Kaisiepo">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body pe-5">
+                  <h3>Frans Kaisiepo</h3>
+                  <h5>1921-1979</h5>
+                  <br>
+                  <ul>
+                    <li class="w-75">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card mb-3 w-100 text-light" style="background-color: #242424;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/public/Marthen_Indey.jpg" class="img-fluid rounded-start object-fit-cover w-100 h-100"
+                  alt="Marthen Indey">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body pe-5">
+                  <h3>Marthen Indey</h3>
+                  <h5>1912-1986</h5>
+                  <br>
+                  <ul>
+                    <li class="w-75">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card mb-3 w-100 text-light" style="background-color: #242424;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/public/Johannes_Abraham_Dimara.jpg"
+                  class="img-fluid rounded-start object-fit-cover w-100 h-100" alt="Johannes Abraham Dimara">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body pe-5">
+                  <h3>Johannes Abraham Dimara</h3>
+                  <h5>1916-2000</h5>
+                  <br>
+                  <ul>
+                    <li class="w-75">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card mb-3 w-100 text-light" style="background-color: #242424;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/public/Silas_Papare.jpg" class="img-fluid rounded-start object-fit-cover w-100 h-100"
+                  alt="Silas Papare">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body pe-5">
+                  <h3>Silas Papare</h3>
+                  <h5>1918-1978</h5>
+                  <br>
+                  <ul>
+                    <li class="w-75">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card mb-3 w-100 text-light" style="background-color: #242424;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/public/Machmud_Singgirei_Rumagesan.jpg"
+                  class="img-fluid rounded-start object-fit-cover w-100 h-100" alt="Machmud Singgirei Rumagesan">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body pe-5">
+                  <h3>Machmud Singgirei Rumagesan</h3>
+                  <h5>1885-1964</h5>
+                  <br>
+                  <ul>
+                    <li class="w-75">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                    <li class="w-75">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                      <hr>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <br>
+  <br>
+
+  <!-- Pahlawan end -->
+
 </body>
 <footer></footer>
 
-<script
-  type="text/javascript"
-  src="/src/scripts/global.js"
-></script>
-<script
-  type="text/javascript"
-  src="https://unpkg.com/aos@next/dist/aos.js"
-></script>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" 
-  crossorigin="anonymous"
-></script>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
-  crossorigin="anonymous"
-></script>
+<script type="text/javascript" src="/src/scripts/global.js"></script>
+<script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script type="text/javascript">
   AOS.init();
 </script>
+
 </html>
