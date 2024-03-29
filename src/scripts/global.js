@@ -53,3 +53,14 @@ const DropdownMediaQuery = () => {
 };
 
 window.addEventListener("resize", DropdownMediaQuery);
+
+// Karosel 1
+document.addEventListener("DOMContentLoaded", () => {
+  new Splide(".splide__1", {
+    autoplay: true,
+    drag: "free",
+    perPage: 1,
+    snap: true,
+    type: "loop",
+  }).mount();
+});

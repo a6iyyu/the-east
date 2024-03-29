@@ -62,6 +62,14 @@
     width: 80%;
     text-align: justify;
   }
+  .splide__1 {
+    height: 30rem;
+  }
+  .splide__1 .splide__list .splide__slide > div:not(div:nth-child(3)) {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .carousel h3,
   .carousel h5,
   .carousel p {
