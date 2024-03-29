@@ -26,33 +26,27 @@ ScrollToTopButton.addEventListener("click", () => {
 
 // Dropdown
 const DropdownButton = document.getElementById("dropdown-button");
-const DropdownMenu = document.getElementById("dropdown-menu");
 let open = false;
 
-document.body.addEventListener("click", (e) => {
-  if (!DropdownButton.contains(e.target)) {
-    DropdownMenu.classList.add("opacity-0");
-    open = false;
-  }
-});
-
-DropdownButton.addEventListener("click", () => {
+function toggleNavDropdown(){
   open = !open;
   if (open) {
-    DropdownMenu.classList.remove("opacity-0");
+    DropdownMenu.classList.remove("d-none");
   } else {
-    DropdownMenu.classList.add("opacity-0");
-  }
-});
-
-const DropdownMediaQuery = () => {
-  if (window.matchMedia("(min-width: 863px)").matches) {
-    DropdownMenu.classList.add("opacity-0");
-    open = false;
+    DropdownMenu.classList.add("d-none");
   }
 };
 
-window.addEventListener("resize", DropdownMediaQuery);
+// On scroll navbar
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 70) {
+    header.classList.add("navTransparent");
+  } else {
+    header.classList.remove("navTransparent");
+  }
+});
 
 // Karosel 1
 document.addEventListener("DOMContentLoaded", () => {
