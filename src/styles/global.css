@@ -70,6 +70,7 @@ p {
   }
   #dropdown-menu p {
     cursor: pointer;
+    font-size: 1rem;
     transition: all 300ms ease-in-out;
   }
   #dropdown-menu p:hover {

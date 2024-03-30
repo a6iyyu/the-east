@@ -31,26 +31,26 @@ let open = false;
 
 document.body.addEventListener("click", (e) => {
   if (!DropdownButton.contains(e.target)) {
-    DropdownMenu.classList.add("opacity-0");
+    DropdownMenu.classList.add("d-none");
     open = false;
   } else if (!open) {
     open = true;
-    DropdownMenu.classList.remove("opacity-0");
+    DropdownMenu.classList.remove("d-none");
   }
 });
 
 DropdownButton.addEventListener("click", () => {
   open = !open;
   if (open) {
-    DropdownMenu.classList.remove("opacity-0");
+    DropdownMenu.classList.remove("d-none");
   } else {
-    DropdownMenu.classList.add("opacity-0");
+    DropdownMenu.classList.add("d-none");
   }
 });
 
 const DropdownMediaQuery = () => {
   if (window.matchMedia("(min-width: 863px)").matches) {
-    DropdownMenu.classList.add("opacity-0");
+    DropdownMenu.classList.add("d-none");
     open = false;
   }
 };
