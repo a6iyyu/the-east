@@ -26,25 +26,91 @@ ScrollToTopButton.addEventListener("click", () => {
 
 // Dropdown
 const DropdownButton = document.getElementById("dropdown-button");
+const DropdownMenu = document.getElementById("dropdown-menu");
 let open = false;
 
-function toggleNavDropdown(){
+document.body.addEventListener("click", (e) => {
+  if (!DropdownButton.contains(e.target)) {
+    DropdownMenu.classList.add("opacity-0");
+    open = false;
+  } else if (!open) {
+    open = true;
+    DropdownMenu.classList.remove("opacity-0");
+  }
+});
+
+DropdownButton.addEventListener("click", () => {
   open = !open;
   if (open) {
-    DropdownMenu.classList.remove("d-none");
+    DropdownMenu.classList.remove("opacity-0");
   } else {
-    DropdownMenu.classList.add("d-none");
+    DropdownMenu.classList.add("opacity-0");
+  }
+});
+
+const DropdownMediaQuery = () => {
+  if (window.matchMedia("(min-width: 863px)").matches) {
+    DropdownMenu.classList.add("opacity-0");
+    open = false;
   }
 };
 
-// On scroll navbar
+window.addEventListener("resize", DropdownMediaQuery);
+
+// On scroll Navbar
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 70) {
-    header.classList.add("navTransparent");
+    header.classList.add("header-transparent");
   } else {
-    header.classList.remove("navTransparent");
+    header.classList.remove("header-transparent");
+  }
+});
+
+// Scroll Into View
+const BerandaButton = document.getElementById("beranda-button");
+const BerandaSection = document.getElementById("beranda-section");
+
+BerandaButton.addEventListener("click", () => {
+  BerandaSection.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+const PerjuanganButton = document.getElementById("perjuangan-button");
+const PerjuanganSection = document.getElementById("perjuangan-section");
+
+PerjuanganButton.addEventListener("click", () => {
+  PerjuanganSection.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+const PahlawanButton = document.getElementById("pahlawan-button");
+const PahlawanSection = document.getElementById("pahlawan-section");
+
+PahlawanButton.addEventListener("click", () => {
+  PahlawanSection.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+DropdownMenu.addEventListener("click", (e) => {
+  if (e.target.id === "beranda-button") {
+    BerandaSection.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+  if (e.target.id === "perjuangan-button") {
+    PerjuanganSection.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+  if (e.target.id === "pahlawan-button") {
+    PahlawanSection.scrollIntoView({
+      behavior: "smooth",
+    });
   }
 });
 

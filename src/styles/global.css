@@ -29,10 +29,32 @@ p {
   img::selection {
     background: none;
   }
-  a {
-    color: #e4e4e4;
+  .logo {
     text-decoration: none;
+    font-family: "Lustria", "DM Sans", "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  #scroll-indicator {
+    top: 8rem;
+  }
+  header {
+    width: fit-content;
+    height: 8rem;
+    z-index: 25;
+    transition: all 200ms ease-in-out;
+    background-color: transparent;
+  }
+  header p {
+    color: #e4e4e4;
+    cursor: pointer;
     transition: all 300ms ease-in-out;
+  }
+  header p:hover {
+    color: #e1e1e1 !important;
+    text-decoration: underline;
+  }
+  .header-transparent {
+    transition: all 200ms ease-in-out;
+    background-color: #242424;
   }
   header > section:nth-child(2) > a:hover {
     color: #dedede;
@@ -46,14 +68,13 @@ p {
     overflow-x: hidden;
     padding: 0;
   }
-  .logo {
-    font-family: "Lustria", "DM Sans", "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  #dropdown-menu {
+  #dropdown-menu p {
     cursor: pointer;
+    transition: all 300ms ease-in-out;
   }
-  #dropdown-menu a:hover {
+  #dropdown-menu p:hover {
     background-color: #e3e3e3;
+    color: #404040 !important;
   }
   #scroll-to-top {
     height: 6rem;
@@ -92,33 +113,47 @@ p {
 }
 
 @media screen and (max-width: 1160px) {
-  header > section:first-child {
-    width: 40% !important;
-  }
-  header > section:last-child {
-    width: 40% !important;
-  }
-  header > section:last-child i {
-    cursor: pointer;
+  #dropdown-button {
     display: flex !important;
-    padding: 0.75rem;
+    padding: 0.7rem;
     transition: all 300ms ease-in-out;
   }
-  header > section:last-child i:hover {
+  #dropdown-button:hover {
     background-color: #d3d3d3 !important;
   }
   #dropdown-menu {
-    right: 6rem;
+    right: 8.5rem;
+    top: 7rem;
   }
 }
 
 @media screen and (max-width: 1024px) {
+  #scroll-indicator {
+    top: 7rem;
+  }
+  header {
+    height: 7rem;
+  }
+  #dropdown-menu {
+    right: 7rem;
+    top: 8rem;
+  }
 }
 
 @media screen and (max-width: 864px) {
+  #scroll-indicator {
+    top: 6rem;
+  }
   #scroll-to-top {
     bottom: 3rem;
     right: 3rem;
+  }
+  #dropdown-menu {
+    top: 6rem;
+    right: 6rem;
+  }
+  header {
+    height: 6rem;
   }
 }
 
