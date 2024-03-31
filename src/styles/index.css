@@ -47,12 +47,17 @@
     width: 80%;
     text-align: justify;
   }
+  #perjuangan-section {
+    margin-bottom: 2rem;
+  }
+  #perjuangan-section .btn {
+    padding: 1rem 2rem;
+  }
   .splide__1 {
     height: 30rem;
   }
   .splide__1 .splide__list .splide__slide > div:not(div:nth-child(3)) {
-    background-position: bottom;
-    background-repeat: no-repeat;
+    background: bottom no-repeat;
     background-size: cover;
   }
   .carousel h3,
@@ -113,6 +118,10 @@
   }
   .hero img,
   .hero-2 img {
+    width: 100% !important;
+  }
+  .splide__slide,
+  .splide__slide > div {
     width: 100% !important;
   }
 }

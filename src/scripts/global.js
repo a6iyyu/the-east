@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new Splide(".splide__1", {
     autoplay: true,
     drag: "free",
-    perPage: 1,
+    perPage: 2,
     snap: true,
     type: "loop",
   }).mount();
