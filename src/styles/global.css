@@ -7,9 +7,14 @@
   box-sizing: border-box;
   font-family: "Inter", "DM Sans", "Open Sans", "Helvetica Neue", sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
   font-family: "Lustria", "DM Sans", "Open Sans", "Helvetica Neue", sans-serif;
-
 }
 p {
   font-size: 16px;
@@ -31,7 +36,6 @@ p {
   }
   .logo {
     text-decoration: none;
-    font-family: "Lustria", "DM Sans", "Open Sans", "Helvetica Neue", sans-serif;
   }
   #scroll-indicator {
     top: 8rem;
