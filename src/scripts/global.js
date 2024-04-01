@@ -61,7 +61,7 @@ window.addEventListener("resize", DropdownMediaQuery);
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= 50) {
+  if (window.scrollY >= 10) {
     header.classList.add("header-transparent");
   } else {
     header.classList.remove("header-transparent");
@@ -113,6 +113,11 @@ DropdownMenu.addEventListener("click", (e) => {
     });
   }
 });
+
+// Handle Details
+const HandleDetails = () => {
+  console.log("Hai")
+}
 
 // Karosel 1
 document.addEventListener("DOMContentLoaded", () => {

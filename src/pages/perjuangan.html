@@ -31,7 +31,7 @@
 </div>
 
 <!-- Navbar -->
-<header class="mx-auto w-100 d-flex align-items-center justify-content-center position-fixed top-0" data-aos="fade-in">
+<header class="mx-auto w-100 d-flex align-items-center justify-content-center position-fixed top-0 z-2" data-aos="fade-in">
   <section class="d-flex h-100 w-25 align-items-center justify-content-start">
     <a href="/index.html" class="logo h2 h-auto w-auto text-light">
       <!-- <img src="" alt="Logo" width="" /> -->
@@ -59,11 +59,10 @@
 
 <body>
   <!-- Hero -->
-  <section class="hero d-flex align-items-center justify-content-center fw-bold text-light text-center">
-    <div class="bg-dark bg-gradient w-100 opacity-75 position-absolute" style="z-index: 1"></div>
-    <h1 class="mx-5 display-5 pe-none" style="z-index: 2; font-weight: 900">
-      PERJUANGAN MELAWAN PENJAJAH
-    </h1>
+  <section class="hero d-flex flex-column align-items-center justify-content-center fw-bold text-light text-center">
+    <div class="h-100 w-100 opacity-75 position-absolute z-0" style="background-image: linear-gradient(to left, #121212, #363636)"></div>
+    <h1 class="display-5 fw-bold pe-none z-1">PERJUANGAN MELAWAN</h1>
+    <h1 class="display-5 fw-bold pe-none z-1">PENJAJAH</h1>
   </section>
   <div class="d-flex h-auto w-auto flex-column pe-none position-absolute" style="opacity: 0.5; z-index: 10; right: 2rem">
     <div class="d-flex">
@@ -108,10 +107,14 @@
   <!-- Perjuangan -->
   <section class="mx-auto d-flex h-auto w-75 align-items-center justify-content-center">
     <div 
-      class="d-flex h-auto w-100 align-items-center justify-content-center rounded-3 bg-dark"
+      class="d-flex h-auto w-100 flex-column align-items-center justify-content-center rounded-3 bg-dark"
       style="cursor: pointer; transition: all 300ms ease-in-out"
     >
-      <div class="d-flex h-auto align-items-center justify-content-between text-light" style="width: 90%; padding: 1.25rem 0">
+      <div
+        class="d-flex h-auto align-items-center justify-content-between fw-bold text-light"
+        style="width: 90%; padding: 1.25rem 0"
+        onclick="HandleDetails()"
+      >
         Lorem ipsum dolor sit amet consectetur adipisicing.
         <span class="h-auto w-auto">
           <img
@@ -121,6 +124,9 @@
             style="transition: all 300ms ease-in-out; transform: rotate(180deg)"
           />
         </span>
+      </div>
+      <div class="d-grid h-auto w-100" style="place-items: center">
+        <div class="h-auto fw-medium text-light" style="width: 90%"></div>
       </div>
     </div>
   </section>
