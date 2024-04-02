@@ -12,6 +12,10 @@
     background: url("../../public/penjajahan-papua.jpg") center no-repeat;
     background-size: cover;
   }
+  .hero > div{
+    background-image: linear-gradient(to left, #121212, #363636);
+    height: 40rem;
+  }
 }
 
 @media screen and (max-width: 2080px) {
