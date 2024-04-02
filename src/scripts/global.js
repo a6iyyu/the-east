@@ -25,28 +25,28 @@ ScrollToTopButton.addEventListener("click", () => {
 });
 
 // Dropdown
-const DropdownButton = document.getElementById("dropdown-button");
-const DropdownMenu = document.getElementById("dropdown-menu");
-let open = false;
+// const DropdownButton = document.getElementById("dropdown-button");
+// const DropdownMenu = document.getElementById("dropdown-menu");
+// let open = false;
 
-document.body.addEventListener("click", (e) => {
-  if (!DropdownButton.contains(e.target)) {
-    DropdownMenu.classList.add("d-none");
-    open = false;
-  } else if (!open) {
-    open = true;
-    DropdownMenu.classList.remove("d-none");
-  }
-});
+// document.body.addEventListener("click", (e) => {
+//   if (!DropdownButton.contains(e.target)) {
+//     DropdownMenu.classList.add("d-none");
+//     open = false;
+//   } else if (!open) {
+//     open = true;
+//     DropdownMenu.classList.remove("d-none");
+//   }
+// });
 
-DropdownButton.addEventListener("click", () => {
-  open = !open;
-  if (open) {
-    DropdownMenu.classList.remove("d-none");
-  } else {
-    DropdownMenu.classList.add("d-none");
-  }
-});
+// DropdownButton.addEventListener("click", () => {
+//   open = !open;
+//   if (open) {
+//     DropdownMenu.classList.remove("d-none");
+//   } else {
+//     DropdownMenu.classList.add("d-none");
+//   }
+// });
 
 const DropdownMediaQuery = () => {
   if (window.matchMedia("(min-width: 863px)").matches) {
@@ -69,31 +69,45 @@ window.addEventListener("scroll", () => {
 });
 
 // Scroll Into View
+let clickToView = (section) =>{
+  section.scrollIntoView({
+    behavior: "smooth",
+  })
+}
+
 const BerandaButton = document.getElementById("beranda-button");
+const BerandaBtnMobile = document.getElementById("beranda-button-mobile");
 const BerandaSection = document.getElementById("beranda-section");
 
+
 BerandaButton.addEventListener("click", () => {
-  BerandaSection.scrollIntoView({
-    behavior: "smooth",
-  });
+  clickToView(BerandaSection);
+});
+BerandaBtnMobile.addEventListener("click", () => {
+  clickToView(BerandaSection);
 });
 
 const PerjuanganButton = document.getElementById("perjuangan-button");
+const PerjuanganBtnMobile = document.getElementById("perjuangan-button-mobile");
 const PerjuanganSection = document.getElementById("perjuangan-section");
 
-PerjuanganButton.addEventListener("click", () => {
-  PerjuanganSection.scrollIntoView({
-    behavior: "smooth",
-  });
+
+PerjuanganButton.addEventListener("click", ()=>{
+  clickToView(PerjuanganSection);
+});
+PerjuanganBtnMobile.addEventListener("click", ()=>{
+  clickToView(PerjuanganSection);
 });
 
 const PahlawanButton = document.getElementById("pahlawan-button");
+const PahlawanBtnMobile = document.getElementById("pahlawan-button-mobile");
 const PahlawanSection = document.getElementById("pahlawan-section");
 
 PahlawanButton.addEventListener("click", () => {
-  PahlawanSection.scrollIntoView({
-    behavior: "smooth",
-  });
+  clickToView(PahlawanSection);
+});
+PahlawanBtnMobile.addEventListener("click", () => {
+  clickToView(PahlawanSection);
 });
 
 DropdownMenu.addEventListener("click", (e) => {

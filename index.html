@@ -49,34 +49,38 @@
       </a>
     </section>
     <section class="d-flex h-100 w-50 align-items-center justify-content-end">
-      <p class="d-none d-xl-flex fw-medium me-5 text-light" id="beranda-button">
+      <p class="d-none d-md-flex fw-medium me-5 text-light" id="beranda-button">
         Beranda
       </p>
-      <p class="d-none d-xl-flex fw-medium me-5 text-light" id="perjuangan-button">
+      <p class="d-none d-md-flex fw-medium me-5 text-light" id="perjuangan-button">
         Perjuangan
       </p>
-      <p class="d-none d-xl-flex fw-medium me-5 text-light" id="pahlawan-button">
+      <p class="d-none d-md-flex fw-medium me-5 text-light" id="pahlawan-button">
         Pahlawan
       </p>
-      <p class="d-none d-xl-flex fw-medium text-light" id="saat-ini-button">
+      <p class="d-none d-md-flex fw-medium text-light" id="saat-ini-button">
         Saat Ini
       </p>
-      <i class="bi bi-list bg-light d-xl-none display-5 z-2" id="dropdown-button"></i>
+      <div class="dropdown">
+        <a class="btn btn-light btn-sm d-md-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-list bg-light display-5 z-2" id="dropdown-button"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item btn btn-light fw-medium px-5 py-4 rounded-3 text-dark" id="beranda-button-mobile">
+            Beranda
+          </a>
+          <a class="dropdown-item btn btn-light fw-medium px-5 py-4 rounded-3 text-dark" id="perjuangan-button-mobile">
+            Perjuangan
+          </a>
+          <a class="dropdown-item btn btn-light fw-medium px-5 py-4 rounded-3 text-dark" id="pahlawan-button-mobile">
+            Pahlawan
+          </a>
+          <a class="dropdown-item btn btn-light fw-medium px-5 py-4 rounded-3 text-dark" id="saat-ini-button-mobile">
+            Saat Ini
+          </a>
+        </div>
+      </div>
     </section>
-    <div class="d-flex flex-column d-none position-absolute rounded-3 bg-light z-1" id="dropdown-menu">
-      <p class="fw-medium px-5 py-4 rounded-3 text-dark" id="beranda-button">
-        Beranda
-      </p>
-      <p class="fw-medium px-5 py-4 rounded-3 text-dark" id="perjuangan-button">
-        Perjuangan
-      </p>
-      <p class="fw-medium px-5 py-4 rounded-3 text-dark" id="pahlawan-button">
-        Pahlawan
-      </p>
-      <p class="fw-medium px-5 py-4 rounded-3 text-dark" id="saat-ini-button">
-        Saat Ini
-      </p>
-    </div>
   </header>
 
   <!-- Beranda -->
