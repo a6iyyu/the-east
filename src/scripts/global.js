@@ -69,7 +69,7 @@ window.addEventListener("scroll", () => {
 });
 
 // Scroll Into View
-let clickToView = (section) =>{
+let clickToView = (section) => {
   section.scrollIntoView({
     behavior: "smooth",
   })
@@ -92,10 +92,10 @@ const PerjuanganBtnMobile = document.getElementById("perjuangan-button-mobile");
 const PerjuanganSection = document.getElementById("perjuangan-section");
 
 
-PerjuanganButton.addEventListener("click", ()=>{
+PerjuanganButton.addEventListener("click", () => {
   clickToView(PerjuanganSection);
 });
-PerjuanganBtnMobile.addEventListener("click", ()=>{
+PerjuanganBtnMobile.addEventListener("click", () => {
   clickToView(PerjuanganSection);
 });
 
@@ -109,6 +109,17 @@ PahlawanButton.addEventListener("click", () => {
 PahlawanBtnMobile.addEventListener("click", () => {
   clickToView(PahlawanSection);
 });
+
+const saatIniButton = document.getElementById("saat-ini-button");
+const saatIniBtnMobile = document.getElementById("saat-ini-button-mobile");
+const saatIniSection = document.getElementById("saat-ini-section");
+
+saatIniButton.addEventListener("click", () => {
+  clickToView(saatIniSection);
+})
+saatIniBtnMobile.addEventListener("click", () => {
+  clickToView(saatIniSection);
+})
 
 DropdownMenu.addEventListener("click", (e) => {
   if (e.target.id === "beranda-button") {

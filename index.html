@@ -63,7 +63,7 @@
       </p>
       <div class="dropdown">
         <a class="btn btn-light btn-sm d-md-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="bi bi-list bg-light display-5 z-2" id="dropdown-button"></i>
+          <i class="bi bi-list bg-light display-5 z-2 text-black" id="dropdown-button"></i>
         </a>
         <div class="dropdown-menu">
           <a class="dropdown-item btn btn-light fw-medium px-5 py-4 rounded-3 text-dark" id="beranda-button-mobile">
@@ -232,29 +232,37 @@
   <hr class="mx-auto w-75 bg-light" style="margin-bottom: 3rem; height: 0.25rem" />
 
   <!-- Perjuangan Papua -->
-  <section class="mx-auto d-flex h-auto w-75 flex-column" id="perjuangan-section">
+  <section class="mx-auto d-flex h-auto w-75 flex-column align-content-center" id="perjuangan-section">
     <h3 class="fw-bold pe-none text-center text-light text-decoration-underline" style="letter-spacing: 0.175rem" data-aos="fade-in">
       Perjuangan Papua
     </h3>
     <br />
-    <div class="splide splide__1 d-flex w-100 align-items-center justify-content-center overflow-hidden" data-aos="fade-in">
-      <div class="splide__track h-100 w-100">
-        <ul class="splide__list">
-          <div class="splide__slide d-flex h-100 w-50 justify-content-center">
-            <div class="h-100 rounded-4" style="width: 95%; background-image: url(/public/koreri.jpeg)"></div>
-          </div>
-          <div class="splide__slide d-flex h-100 w-50 justify-content-center">
-            <div class="h-100 rounded-4" style="width: 95%; background-image: url(/public/yapen.jpg)"></div>
-          </div>
-          <div class="splide__slide d-flex h-100 w-50 justify-content-center">
-            <div class="h-100 rounded-4" style="width: 95%; background-image: url(/public/papua-1900.jpg); background-position: center"></div>
-          </div>
-          <div class="splide__slide d-flex h-100 w-50 justify-content-center">
-            <div class="h-100 rounded-4" style="width: 95%; background-image: url(/public/konferensi-malino.jpg)"></div>
-          </div>
-        </ul>
+
+    <div id="carouselExample" class="carousel slide mx-auto">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/public/koreri.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/public/yapen.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/public/papua-1900.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/public/konferensi-malino.jpg" class="d-block w-100" alt="...">
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+
     <br />
     <p class="w-100 pe-none text-light" style="text-align: justify" data-aos="fade-in">
       Papua, memiliki sejarah perjuangan dalam melawan imperialisme dan penindasan.
@@ -514,10 +522,21 @@
     </div>
   </section>
   <br />
-  <br />
+  <section class="w-75" style="margin: 5rem auto;" id="saat-ini-section">
+    <h2 class="text-center fw-bold m-0 m-md-5">BAGAIMANA KONDISI <br> DI PAPUA SAAT INI?</h2>
+    <p class="my-5 text-center mx-auto w-75">Seiring berjalannya waktu, Papua telah mengalami perubahan dan perkembangan dalam banyak aspek.</p>
+  </section>
+  <div class="end d-flex flex-column flex-md-row align-items-center justify-content-between text-light">
+    <div class="w-50 h-100 d-flex align-items-center justify-content-center gap-5">
+      <h1 class="fw-bolder text-center text-light text-md-start">CARI TAHU<br>PAPUA DISINI</h1>
+      <h1 class="d-none d-md-block"><i class="bi bi-arrow-right"></i></h1>
+    </div>
+    <div class="w-50 h-100 d-flex align-items-center justify-content-center">
+      <a href="/src/pages/saat-ini.html" class="btn btn-dark p-3 fw-bold border-3 border-secondary-subtle"><h3 class="mb-0">KLIK DISINI</h3></a>
+    </div>
+  </div>
+  <footer></footer>
 </body>
-
-<footer></footer>
 
 <script
   type="text/javascript"
