@@ -92,6 +92,19 @@
     background: linear-gradient(to right, #242424, transparent), url("../../public/jayapura-2.jpg") center no-repeat;
     background-size: cover;
   }
+
+  #perjuangan-section .carousel-item {
+    width: 100%;
+    height: 50vh;
+  }
+
+  #pahlawan-section .col-md-4 {
+    /* width: fit-content; */
+    height: 70vh;
+  }
+  #pahlawan-section .col-md-4 img{
+    min-height: fit-content;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -181,5 +194,14 @@
   div#carouselExample {
     width: 100%;
     height: 100%;
+  }
+
+  #pahlawan-section .col-md-4 {
+    width: 100%;
+    height: 310px;
+  }
+
+  #pahlawan-section .col-md-4 img{
+    min-height: fit-content;
   }
 }
