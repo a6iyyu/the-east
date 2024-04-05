@@ -139,11 +139,6 @@ DropdownMenu.addEventListener("click", (e) => {
   }
 });
 
-// Handle Details
-const HandleDetails = () => {
-  console.log("Hai")
-}
-
 // Karosel 1
 document.addEventListener("DOMContentLoaded", () => {
   new Splide(".splide__1", {
