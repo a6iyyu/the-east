@@ -185,12 +185,18 @@ p {
 }
 
 @media screen and (max-width: 480px) {
+  .logo {
+    font-size: 1.25rem;
+  }
   #dropdown-menu {
     right: 3.5rem;
   }
 }
 
 @media screen and (max-width: 360px) {
+  .logo {
+    font-size: 1rem;
+  }
   #dropdown-menu {
     right: 2.5rem;
   }
