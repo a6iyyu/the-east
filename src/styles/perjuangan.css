@@ -1,19 +1,68 @@
 @media screen and (max-width: 3120px) {
+
   .logo,
   header a {
     font-weight: bolder;
   }
+
   header a {
     text-decoration: none;
   }
+
   .hero {
     height: 40rem;
     width: 100%;
     background: url("../../public/penjajahan-papua.jpg") center no-repeat;
     background-size: cover;
   }
-  .hero > div {
+
+  .hero>div {
     background-image: linear-gradient(to left, #121212, #363636);
     height: 40rem;
   }
+
+  #opening p {
+    width: 75%;
+    text-align: justify;
+  }
+
+  article div.w-50 p{
+    text-indent: 36px;
+    text-align: justify;
+  }
+
 }
+
+@media screen and (max-width: 2080px) {}
+
+@media screen and (max-width: 1920px) {}
+
+@media screen and (max-width: 1800px) {}
+
+@media screen and (max-width: 1680px) {}
+
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 1024px) {
+  #opening p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #opening p {
+    width: 100%;
+  }
+
+  article div.w-50 {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 640px) {}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 360px) {}
