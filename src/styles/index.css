@@ -2,7 +2,6 @@
   html {
     scroll-padding: 10rem;
   }
-
   .gradial-blur,
   .gradial-blur-2,
   .gradial-blur-3,
@@ -12,7 +11,6 @@
     filter: blur(9rem);
     z-index: 0;
   }
-
   .papua h2,
   .hero h1,
   .hero h3,
@@ -20,90 +18,66 @@
   .masyarakat h3 {
     font-family: "Lustria", "DM Sans", "Open Sans", "Helvetica Neue", sans-serif;
   }
-
   .papua {
     margin: 8rem 0;
   }
-
   .hero img {
     border-radius: 76% 24% 23% 77% / 51% 39% 61% 49%;
     box-shadow: 0 0 4rem #bcbcbc50;
   }
-
   .hero-2 img {
     border-radius: 35% 65% 75% 25% / 25% 45% 55% 75%;
     box-shadow: 0 0 4rem #bcbcbc50;
   }
-
   .masyarakat {
     margin: 3rem 0;
   }
-
-  .masyarakat>div:last-child {
+  .masyarakat > div:last-child {
     place-items: center;
     grid-template-columns: repeat(3, 1fr);
   }
-
-  .masyarakat>div:last-child>div {
+  .masyarakat > div:last-child > div {
     width: 90%;
   }
-
-  .masyarakat>div:last-child>div>div {
+  .masyarakat > div:last-child > div > div {
     background-color: #242424;
     padding: 1.5rem 0 0.75rem 0;
   }
-
   .masyarakat p {
     width: 80%;
     text-align: justify;
   }
-
   #perjuangan-section {
     margin-bottom: 2rem;
   }
-
   #perjuangan-section .btn {
     padding: 1rem 2rem;
   }
-
   .splide__1 {
     height: 30rem;
   }
-
-  .splide__1 .splide__list .splide__slide>div:not(div:nth-child(3)) {
+  .splide__1 .splide__list .splide__slide > div:not(div:nth-child(3)) {
     background: bottom no-repeat;
     background-size: cover;
   }
-
   .carousel h3,
   .carousel h5,
   .carousel p {
     cursor: default;
   }
-
-  div#carouselExample {
-    width: 75%;
-    height: 50%;
+  .btn {
+    transition: all 300ms ease-in-out !important;
   }
-
   .end {
-    height: 80vh;
-    width: 100%;
+    height: 35rem;
     background: linear-gradient(to right, #242424, transparent), url("../../public/jayapura-2.jpg") center no-repeat;
     background-size: cover;
   }
-
-  #perjuangan-section .carousel-item {
-    width: 100%;
-    height: 50vh;
-  }
-
-  #pahlawan-section .col-md-4 {
-    /* width: fit-content; */
-    height: 70vh;
-  }
-  #pahlawan-section .col-md-4 img{
-    min-height: fit-content;
+  .end a {
+    border-radius: 0.75rem;
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+    transition: all 300ms ease-in-out !important;
   }
 }
 
@@ -111,15 +85,12 @@
   .masyarakat {
     margin: 3rem 0 1rem 0;
   }
-
-  .masyarakat>div:last-child {
+  .masyarakat > div:last-child {
     grid-template-columns: 1fr;
   }
-
-  .masyarakat>div:last-child>div {
+  .masyarakat > div:last-child > div {
     margin-bottom: 2rem;
   }
-
   .masyarakat p {
     font-weight: 500;
     text-align: center;
@@ -131,69 +102,64 @@
     margin: 7rem 0 5rem 0;
     flex-direction: column-reverse;
   }
-
-  .papua>div {
+  .papua > div {
     width: 100% !important;
   }
-
   .papua h2,
   .hero h1,
   .hero h3,
   .hero-2 h3 {
     text-align: center;
   }
-
   .papua img {
     margin: auto auto 5rem auto;
     width: 80% !important;
   }
-
-  .hero>div {
+  .hero > div {
     flex-direction: column-reverse;
   }
-
   .hero-2 {
     flex-direction: column;
   }
-
-  .hero>div>div,
-  .hero-2>div {
+  .hero > div > div,
+  .hero-2 > div {
     width: 100% !important;
   }
-
-  .hero>div>div:last-child,
-  .hero-2>div:first-child {
+  .hero > div > div:last-child,
+  .hero-2 > div:first-child {
     justify-content: center !important;
     margin-bottom: 3rem;
   }
-
   .hero img,
   .hero-2 img {
     width: 100% !important;
   }
-
   .splide__slide,
-  .splide__slide>div {
+  .splide__slide > div {
     width: 100% !important;
   }
 }
 
-@media screen and (max-width: 864px) {
+@media screen and (max-width: 960px) {
+  html {
+    scroll-padding: 8rem;
+  }
+  .end > div {
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: center !important;
+  }
+}
 
+@media screen and (max-width: 864px) {
   .hero,
   .hero-2 {
     width: 85% !important;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .end {
-    background: linear-gradient(to bottom, #242424, transparent), url("../../public/jayapura-2.jpg") center no-repeat;
-  }
-
-  div#carouselExample {
-    width: 100%;
-    height: 100%;
+  .end a {
+    border-radius: 0.5rem !important;
+    font-size: 1rem;
+    padding: 1rem 1.75rem;
   }
 
   #pahlawan-section .col-md-4 {
