@@ -8,36 +8,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/public/papua.svg" />
   <title>Perjuangan</title>
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/aos@next/dist/aos.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="/src/styles/global.css" />
   <link rel="stylesheet" href="/src/styles/perjuangan.css" />
 </head>
 
 <body>
   <div id="scroll-indicator" class="position-fixed bg-light" style="height: 0.25rem; z-index: 999"></div>
-  <div
-    id="scroll-to-top"
+  <div id="scroll-to-top"
     class="bg-light d-flex align-items-center justify-content-center invisible opacity-0 position-fixed rounded-circle z-2"
-    style="transition: all 300ms ease-in-out"
-  >
+    style="transition: all 300ms ease-in-out">
     <img src="/public/scroll-to-top.png" width="85" alt="Scroll To Top" class="fw-bold text-dark" />
   </div>
 
   <!-- Navbar -->
-  <header class="mx-auto w-100 d-flex align-items-center justify-content-center position-fixed top-0" data-aos="fade-in">
+  <header class="mx-auto w-100 d-flex align-items-center justify-content-center position-fixed top-0"
+    data-aos="fade-in">
     <section class="d-flex h-100 w-25 align-items-center justify-content-start">
       <a href="/index.html" class="logo h2 h-auto w-auto text-light">
         <!-- <img src="" alt="Logo" width="" /> -->
@@ -72,7 +61,8 @@
       </h1>
     </span>
   </section>
-  <div class="d-flex h-auto w-auto flex-column pe-none position-absolute" style="opacity: 0.5; z-index: 10; right: 2rem">
+  <div class="d-flex h-auto w-auto flex-column pe-none position-absolute"
+    style="opacity: 0.5; z-index: 10; right: 2rem">
     <div class="d-flex">
       <span class="text-light" style="margin: 1rem">&#x2022;</span>
       <span class="text-light" style="margin: 1rem">&#x2022;</span>
@@ -104,51 +94,115 @@
   </div>
 
   <!-- Kalimat Pembuka -->
-  <section class="mx-auto h-auto w-75" style="margin: 4rem 0">
-    <p class="pe-none text-light mx-auto" style="text-align: justify">
+  <section class="mx-auto h-auto w-75" style="margin: 4rem 0" id="opening">
+    <p class="pe-none text-light mx-auto" style="text-indent: 36px;">
       Dalam perjalanan sejarahnya, Pulau Papua telah menjadi saksi bisu bagi perjuangan melawan penjajahan baik
       dari Belanda ataupun Jepang. Di bawah bayang-bayang kolonialisme yang mengakar kuat, rakyat Papua telah berjuang
       dengan tekad yang teguh untuk mengusir penjajah dan bergabung dengan Republik Indonesia.
     </p>
   </section>
 
+
   <!-- Perjuangan -->
-  <section class="mx-auto d-flex h-auto w-75 align-items-center justify-content-center">
-    <div class="d-flex h-auto w-100 flex-column align-items-center justify-content-center rounded-3 bg-dark" style="cursor: pointer; transition: all 300ms ease-in-out">
-      <div class="d-flex h-auto align-items-center justify-content-between fw-bold text-light" style="width: 90%; font-family: 'Lustria'; padding: 1.25rem 0">
-        Lorem ipsum dolor sit amet consectetur adipisicing.
-        <span class="h-auto w-auto">
-          <img src="/public/scroll-to-top.png" alt="" width="30" style="transition: all 300ms ease-in-out; transform: rotate(180deg)" />
-        </span>
-      </div>
-      <div class="d-grid h-auto w-100" style="place-items: center">
-        <div class="h-auto fw-medium text-light" style="width: 90%"></div>
-      </div>
+  <section class="mx-auto d-flex flex-column justify-content-center gap-5 h-auto w-75 text-light"
+    id="perjuangan-article">
+
+    <div class="w-75 mx-auto">
+      <h2 class="text-capitalize text-center">Berbagai cara dalam berjuang</h2>
+      <hr class="w-100 mx-auto my-3 border border-2">
     </div>
+
+
+    <article class="container-fluid my-5 d-flex flex-column flex-md-row gap-5">
+      <div class="w-50 overflow-hidden px-5">
+        <img src="/public/koreri-2.jpeg" class="w-100 h-100 rounded-3 object-fit-cover" alt="">
+      </div>
+      <div class="w-50 d-flex flex-column justify-content-center">
+        <h3 class="text-center text-capitalize text-md-start m-0">Konferensi Malino (1946)</h3>
+        <hr class="w-100 border border-2" style="margin: 24px 0;">
+        <p>Pada 1943, rakyat Papua melakukan perlawanan terhadap Jepang yang bernama.
+          Gerakan Koreri adalah gerakan yang menjadi wujud kekecewaan
+          rakyat Papua atas tindakan Jepang dengan basis perlawanan di Biak.
+          Rakyat Papua tetap gigih melakukan perlawanan sampai akhirnya
+          Jepang kewalahan dan hengkang dari Biak.</p>
+      </div>
+    </article>
+
+    <article class="container-fluid my-5 d-flex flex-column flex-md-row-reverse gap-5">
+      <div class="w-50 overflow-hidden px-5">
+        <img src="/public/yapen.jpg" class="w-100 h-100 rounded-3 object-fit-cover" alt="">
+      </div>
+      <div class="w-50 d-flex flex-column justify-content-center">
+        <h3 class="text-center text-capitalize text-md-start m-0">Pulau Yapen Selatan</h3>
+        <hr class="w-100 border border-2" style="margin: 24px 0;">
+        <p>Perlawanan rakyat Papua terhadap Jepang juga meluas hingga
+          ke Pulau Yapen Selatan. Dengan dipimpin oleh Nimrod, rakyat
+          Papua terus berusaha memukul mundur pasukan Jepang dari Pulau
+          Yapen. Ketika itu, Jepang juga terlibat dalam perang Asia
+          Pasifik. Sekutu, yang mengetahui perlawanan rakyat Papua saat
+          itu, turut membantu dengan menyuplai senjata.</p>
+      </div>
+    </article>
+
+    <article class="container-fluid my-5 d-flex flex-column flex-md-row gap-5">
+      <div class="w-50 overflow-hidden px-5">
+        <img src="/public/tanah-besar.jpg" class="w-100 h-100 rounded-3 object-fit-cover" alt="">
+      </div>
+      <div class="w-50 d-flex flex-column justify-content-center">
+        <h3 class="text-center text-capitalize text-md-start m-0">Tanah Besar (1944-1945)</h3>
+        <hr class="w-100 border border-2" style="margin: 24px 0;">
+        <p>Pada 1943, rakyat Papua melakukan perlawanan terhadap Jepang yang bernama.
+          Gerakan Koreri adalah gerakan yang menjadi wujud kekecewaan
+          rakyat Papua atas tindakan Jepang dengan basis perlawanan di Biak.
+          Rakyat Papua tetap gigih melakukan perlawanan sampai akhirnya
+          Jepang kewalahan dan hengkang dari Biak.</p>
+      </div>
+    </article>
+
+    <article class="container-fluid my-5 d-flex flex-column flex-md-row-reverse gap-5">
+      <div class="w-50 overflow-hidden px-5">
+        <img src="/public/konferensi-malino.jpg" class="w-100 h-100 rounded-3 object-fit-cover" alt="">
+      </div>
+      <div class="w-50 d-flex flex-column justify-content-center">
+        <h3 class="text-center text-capitalize text-md-start m-0">Konferensi Malino (1946)</h3>
+        <hr class="w-100 border border-2" style="margin: 24px 0;">
+        <p>Dalam Konperensi Malino yang dihadiri oleh 26 tokoh yang diundang
+          mewakili 15 daerah di luar J awa dan Sumatera, Conica J. van
+          Eechoud menunjuk Frans Kaisiepo untuk mewakili daerah lrian Jaya.
+          pada tanggal 18 Juli 1946 di hadapan para peserta Konperensi
+          Malino muncullah nama IRIAN yang diumumkan oleh Frans Kaisiepo sewaktu menyampaikan pidatonya.
+        </p>
+      </div>
+    </article>
+
+    <article class="container-fluid my-5 d-flex flex-column flex-md-row gap-5">
+      <div class="w-50 overflow-hidden px-5">
+        <img src="/public/koreri.jpeg" class="w-100 h-100 rounded-3 object-fit-cover" alt="">
+      </div>
+      <div class="w-50 d-flex flex-column justify-content-center">
+        <h3 class="text-center text-capitalize text-md-start m-0">Perlawanan Biak (1948)</h3>
+        <hr class="w-100 border border-2" style="margin: 24px 0;">
+        <p>Pada tanggal 14 Maret 1948 di Biak meletus pemberontakan rakyat
+          Biak di bawah pimpinan Stefanus Yosef. Menghadapi perlawanan
+          rakyat Biak itu pemerintah Kolonial Belanda kemudian mengancam
+          akan menggempur habis-habisan rakyat Biak kalau para pemimpin
+          pemberontakan tidak mau menyerah. Demi rakyat yang dibelanya
+          terpaksa perlawanan dihentikan.</p>
+      </div>
+    </article>
+
   </section>
 
   <!-- Footer -->
   <footer></footer>
 </body>
 
-<script
-  type="text/javascript"
-  src="/src/scripts/global.js"
-></script>
-<script
-  type="text/javascript"
-  src="https://unpkg.com/aos@next/dist/aos.js"
-></script>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-  crossorigin="anonymous"
-></script>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-  crossorigin="anonymous"
-></script>
+<script type="text/javascript" src="/src/scripts/global.js"></script>
+<script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script type="text/javascript">
   AOS.init();
 </script>
