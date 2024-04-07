@@ -16,6 +16,10 @@
     background-image: linear-gradient(to left, #121212, #363636);
     height: 40rem;
   }
+  article p{
+    text-indent: 24px;
+    text-align: justify;
+  }
 }
 
 @media screen and (max-width: 1160px) {
