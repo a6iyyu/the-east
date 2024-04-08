@@ -16,8 +16,8 @@
     background-image: linear-gradient(to left, #121212, #363636);
     height: 40rem;
   }
-  article p{
-    text-indent: 24px;
+  article p {
+    text-indent: 3rem;
     text-align: justify;
   }
 }
