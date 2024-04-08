@@ -85,9 +85,9 @@
   .hero-2 {
     flex-direction: column;
   }
-  .hero-2 p {
+  /* .hero-2 p {
     text-align-last: center;
-  }
+  } */
   .hero-2 p:first-child {
     margin-right: 0;
   }
