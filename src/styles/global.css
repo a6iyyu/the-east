@@ -20,7 +20,8 @@ h4,
 h5,
 h6,
 mark,
-.logo {
+.logo,
+footer p {
   font-family: "Lustria", "DM Sans", "Open Sans", "Helvetica Neue", sans-serif;
 }
 p {
@@ -104,24 +105,12 @@ p {
   .splide .splide__pagination__page {
     display: none;
   }
-}
-
-@media screen and (max-width: 2080px) {
-}
-
-@media screen and (max-width: 1920px) {
-}
-
-@media screen and (max-width: 1800px) {
-}
-
-@media screen and (max-width: 1680px) {
-}
-
-@media screen and (max-width: 1440px) {
-}
-
-@media screen and (max-width: 1280px) {
+  footer {
+    padding: 4rem 0 2rem 0;
+  }
+  footer section:first-child {
+    margin-bottom: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 1160px) {
@@ -150,11 +139,22 @@ p {
     right: 7rem;
     top: 8rem;
   }
+  footer {
+    padding: 3rem 0;
+  }
+  footer section:first-child div:last-child {
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 864px) {
   #scroll-indicator {
     top: 6rem;
+  }
+  header {
+    height: 6rem;
   }
   #scroll-to-top {
     bottom: 3rem;
@@ -163,9 +163,6 @@ p {
   #dropdown-menu {
     top: 6rem;
     right: 6rem;
-  }
-  header {
-    height: 6rem;
   }
 }
 
