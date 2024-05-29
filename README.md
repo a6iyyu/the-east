@@ -52,7 +52,7 @@ This website is built using the following technologies:
 <h2 align="center">Purpose</h2>
 
 <p align="justify">
-The primary goal of **The East** is to enhance understanding and appreciation of the history and culture of Papua. Through the information presented, it is hoped that visitors can better know Papua, appreciate the struggles of its people, and understand the current conditions and challenges faced.
+The primary goal of The East is to enhance understanding and appreciation of the history and culture of Papua. Through the information presented, it is hoped that visitors can better know Papua, appreciate the struggles of its people, and understand the current conditions and challenges faced.
 </p>
 
 We hope this site can serve as a valuable and inspiring source of information for anyone wanting to learn more about Papua. Thank you for visiting **The East**.
