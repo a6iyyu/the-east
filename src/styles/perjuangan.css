@@ -1,6 +1,8 @@
 @media screen and (max-width: 3120px) {
   .logo,
-  header a {
+  header,
+  .hero h1 {
+    color: white;
     font-weight: bolder;
   }
   header a {
@@ -16,8 +18,25 @@
     background-image: linear-gradient(to left, #121212, #363636);
     height: 40rem;
   }
+  .gradial-blur,
+  .gradial-blur-2,
+  .gradial-blur-3,
+  .gradial-blur-4 {
+    height: 10rem;
+    width: 10rem;
+    filter: blur(7.5rem);
+    z-index: 0;
+  }
+  .gradial-blur-2 {
+    top: 100rem;
+  }
+  .gradial-blur-3 {
+    top: 150rem;
+  }
+  .gradial-blur-4 {
+    top: 200rem;
+  }
   article p {
-    text-indent: 3rem;
     text-align: justify;
   }
 }

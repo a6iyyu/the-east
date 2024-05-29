@@ -15,7 +15,7 @@
     background: linear-gradient(to top, #3b3b3b, transparent), url("../../public/jembatan-youtefa-1.jpg") center no-repeat;
     background-size: cover;
   }
-  .hero > div:first-child {
+  .hero > section:first-child {
     height: 50%;
     align-items: flex-end;
   }
@@ -46,11 +46,11 @@
 }
 
 @media screen and (max-width: 960px) {
-  .hero > div:first-child {
+  .hero > section:first-child {
     height: 100%;
     align-items: center;
   }
-  .hero > div:last-child,
+  .hero > section:last-child,
   .hero span {
     display: none !important;
   }
