@@ -20,7 +20,7 @@ The Home section provides an overview of Papua. Here, visitors can find informat
 - **Heroes:** Features profiles of Papuan heroes who played significant roles in the struggle for independence.
 </p>
 
-### 2. Struggle
+### 2. Perjuangan
 
 <p align="justify">
 This section focuses on the various struggles undertaken by the Papuan people. The information presented includes:
@@ -29,7 +29,7 @@ This section focuses on the various struggles undertaken by the Papuan people. T
 - **Efforts to Unite with Indonesia:** Explains the process and challenges faced by Papua in joining and uniting with the Republic of Indonesia.
 </p>
 
-### 3. Present Day
+### 3. Saat Ini
 
 <p align="justify">
 This section provides a summary of the current state of Papua. Topics discussed include:
@@ -38,7 +38,7 @@ This section provides a summary of the current state of Papua. Topics discussed 
 - **Challenges and Hopes:** Outlines the challenges still faced and the hopes of the Papuan people for the future.
 </p>
 
-## Technologies Used
+<h2 align="center">Technologies Used</h2>
 
 <p align="justify">
 This website is built using the following technologies:
@@ -49,12 +49,11 @@ This website is built using the following technologies:
 - **Bootstrap:** A CSS framework used to accelerate development and ensure responsive design.
 </p>
 
-## Purpose
+<h2 align="center">Purpose</h2>
 
 <p align="justify">
 The primary goal of **The East** is to enhance understanding and appreciation of the history and culture of Papua. Through the information presented, it is hoped that visitors can better know Papua, appreciate the struggles of its people, and understand the current conditions and challenges faced.
 </p>
----
 
 We hope this site can serve as a valuable and inspiring source of information for anyone wanting to learn more about Papua. Thank you for visiting **The East**.
 
