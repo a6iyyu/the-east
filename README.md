@@ -1,7 +1,7 @@
 <h1 align="center">The East</h1>
 
 <p align="justify">
-**The East** is a website built using HTML, CSS, JavaScript, and Bootstrap. This site is designed to introduce the history and culture of Papua to its visitors. It contains important information about Papua, ranging from its geographical conditions to the struggles of its people in achieving independence and integrating with Indonesia.
+The East is a website built using HTML, CSS, JavaScript, and Bootstrap. This site is designed to introduce the history and culture of Papua to its visitors. It contains important information about Papua, ranging from its geographical conditions to the struggles of its people in achieving independence and integrating with Indonesia.
 </p>
 
 <h2 align="center">Menu</h2>
@@ -55,7 +55,11 @@ This website is built using the following technologies:
 The primary goal of The East is to enhance understanding and appreciation of the history and culture of Papua. Through the information presented, it is hoped that visitors can better know Papua, appreciate the struggles of its people, and understand the current conditions and challenges faced.
 </p>
 
-We hope this site can serve as a valuable and inspiring source of information for anyone wanting to learn more about Papua. Thank you for visiting **The East**.
+<p align="justify">
+We hope this site can serve as a valuable and inspiring source of information for anyone wanting to learn more about Papua. Thank you for visiting The East.
+</p>
 
+<p align="justify">
 You can check out the site design link below:
 [The East Figma Design](https://www.figma.com/file/fN082EUYVN5Ik2ktPT32z5/Untitled?type=design&node-id=0-1&mode=design)
+</p>
